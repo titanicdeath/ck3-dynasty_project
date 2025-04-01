@@ -1,4 +1,4 @@
-#include "memory_util.hpp"
+#include "memory_utill.hpp"
 #include "string_utill.hpp"
 
 #include <windows.h>
@@ -81,29 +81,29 @@ void memoryLogging(vector<vector<string>> memorytable){
 
 // A simple function to record memory usage into a table
 void recordMemoryUsage(vector<vector<string>> &memoryTable, vector<size_t> &memoryValues, bool showSpotLog = false, bool showChangeLog = false) {
-// 1) Get current usage
-size_t current = getMemoryUsage();
-memoryValues.push_back(current);
+    // 1) Get current usage
+    size_t current = getMemoryUsage();
+    memoryValues.push_back(current);
 
-// 2) Push it into the table as well
-// For example, the "byteFormat" function returns a vector<string>.
-auto usageStrings = byteFormat(current);
-memoryTable.push_back(usageStrings);
+    // 2) Push it into the table as well
+    // For example, the "byteFormat" function returns a vector<string>.
+    auto usageStrings = byteFormat(current);
+    memoryTable.push_back(usageStrings);
 
-// Optionally show the user the spot usage
-if (showSpotLog) {
-// usageStrings[1] might be the "kilobytes" string if that’s how you set up byteFormat
-cout << "[DEV] Current Program Memory: " << usageStrings[1] << "\n";
-}
+    // Optionally show the user the spot usage
+    if (showSpotLog) {
+    // usageStrings[1] might be the "kilobytes" string if that’s how you set up byteFormat
+    cout << "[DEV] Current Program Memory: " << usageStrings[1] << "\n";
+    }
 
-// If there's a previous measurement, show the difference
-if (showChangeLog && memoryValues.size() > 1) {
-size_t prev = memoryValues[memoryValues.size() - 2];
-size_t delta = current > prev ? current - prev : prev - current;
-auto deltaStrings = byteFormat(delta);
-char sign = (current >= prev) ? '+' : '-';
-cout << "[DEV] Program Memory Change: " << sign << deltaStrings[1] << "\n";
-}
+    // If there's a previous measurement, show the difference
+    if (showChangeLog && memoryValues.size() > 1) {
+    size_t prev = memoryValues[memoryValues.size() - 2];
+    size_t delta = current > prev ? current - prev : prev - current;
+    auto deltaStrings = byteFormat(delta);
+    char sign = (current >= prev) ? '+' : '-';
+    cout << "[DEV] Program Memory Change: " << sign << deltaStrings[1] << "\n";
+    }
 }
 
 
