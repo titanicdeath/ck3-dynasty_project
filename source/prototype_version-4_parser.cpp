@@ -13,8 +13,13 @@
 #include <iomanip>
 #include <map>
 
-#include "memory_utill.hpp"
-#include "string_utill.hpp"
+// #include "../library/memory_utill.hpp"
+// #include "../library/string_utill.hpp"
+// #include <memory_utill.cpp>
+// #include <string_utill.cpp>
+
+#include "../source/memory_utill.cpp"
+#include "../source/string_utill.cpp"
 
 using namespace std;
 
@@ -39,14 +44,14 @@ string loadFileIntoString(const string &filename) {
 // Split the buffer into lines using string_view to avoid copying data.
 vector<string_view> splitLines(const string &buffer) {
     vector<string_view> lines;
-    size_t start = 0;
+    std::size_t start = 0;
     while (start < buffer.size()) {
-        size_t end = buffer.find('\n', start);
+        std::size_t end = buffer.find('\n', start);
         if (end == string::npos) {
             end = buffer.size();
         }
         // Trim a trailing '\r' if present
-        size_t lineLength = (end > start && buffer[end - 1] == '\r') ? end - start - 1 : end - start;
+        std::size_t lineLength = (end > start && buffer[end - 1] == '\r') ? end - start - 1 : end - start;
         lines.emplace_back(buffer.data() + start, lineLength);
         start = end + 1;
     }
@@ -68,7 +73,7 @@ bool firstNameCheck(string_view current, const string check) {
     }
 }
 
-vector<string_view> filterCharacterBlocks(const vector<string_view> &allLines){
+vector<string_view> filterCharacterBlocks(const vector<string_view> &allLines, string &buffer){
     // cout << "[DEBUG] fCB 1" << endl;
     vector<string_view> filtered;
     bool inBlock = false;
@@ -88,9 +93,9 @@ vector<string_view> filterCharacterBlocks(const vector<string_view> &allLines){
     int *counters[4] = {&foundBlockTypeA, &foundBlockTypeB, &lineNumBefore, &lineNumAfter};
 
 
-    for (size_t i = 0; i < allLines.size(); i++) {
+    for (std::size_t i = 0; i < allLines.size(); i++) {
         //cout << "[DEBUG] fCB 2." << i << endl;
-        // If we are not in a block yet, check for the two-line pattern:
+        // If not in a block, check for the two-line pattern:
         //   line i ends with "={"
         //   line i+1 starts with "first_name="
         if (!inBlock) {
@@ -100,7 +105,7 @@ vector<string_view> filterCharacterBlocks(const vector<string_view> &allLines){
                 // Trim left for next line (to ignore leading spaces/tabs)
                 // We'll do a small inline function:
                 auto ltrim = [](string_view sv) {
-                    size_t j = 0;
+                    std::size_t j = 0;
                     while (j < sv.size() && isspace((unsigned char)sv[j])) {
                         j++;
                     }
@@ -116,10 +121,10 @@ vector<string_view> filterCharacterBlocks(const vector<string_view> &allLines){
                     if (inBlock == false) nameInit = firstNameCheck(allLines[i+1], "\tfirst_name=");
                 
                     if (nameInit == true) {
+                        // This is the start of a character block
                         foundBlockTypeA++;
                         //cout << "[DEBUG] fCB 7." << i << endl;
                         //cout << "[DEBUG] fCB 7." << i << ":\t" << allLines[i+1] << endl;
-                        // This is the start of a character block
                         inBlock = true;
                         braceDepth = 0;
 
@@ -138,7 +143,11 @@ vector<string_view> filterCharacterBlocks(const vector<string_view> &allLines){
                         // Done checking; move on
                         continue;
                     }
-                    else if (nameInit == false) foundBlockTypeB++;
+                    else if (nameInit == false){ 
+                        //buffer.erase(i);
+                        foundBlockTypeB++;
+                        
+                    }
                     
                 }
             }
@@ -178,20 +187,20 @@ vector<string_view> filterCharacterBlocks(const vector<string_view> &allLines){
 }
 
 vector<string> findBlock(const vector<string_view> &totalLines, const string &charID){
-    // The patterns we want to match
+    // The patterns to match
     // example: "37676={" and (on next line) "first_name="
     string firstPattern  = charID + "={"; 
     string secondPattern = "first_name="; // ignoring leading tabs/spaces
     
     vector<string> block;
     int braceDepth      = 0;
-    // how many lines we've added
+    // how many lines added
     int stretch         = 0;         
     // line index where the block started
     int startLineNumber = -1; 
     bool patternCheck   = false;
 
-    for (size_t i = 0; i < totalLines.size(); i++){
+    for (std::size_t i = 0; i < totalLines.size(); i++){
         // Convert string_view to string, then trim
         string line = trim(string(totalLines[i]));
         
@@ -244,23 +253,20 @@ vector<string> findBlock(const vector<string_view> &totalLines, const string &ch
                 break;
             }
         }
+
     }
 
-    // If we never set startLineNumber, that means we never found our pattern,
-    // so you can handle that if needed (like returning an empty vector).
+    // If never set startLineNumber, that means patten never found
     if (startLineNumber < 0){
-        // For debugging, you might do:
         cout << "No block found for " << charID << "\n";
     }
 
-    // Optionally, record the start line and number of lines processed
+    // Record the start line and number of lines processed
     block.push_back(to_string(startLineNumber));
     block.push_back(to_string(stretch));
 
     return block;
 }
-
-
 
 vector<string_view> pointerLexicon(const string &buffer) {
     // Static maps for conversion – they persist for the program lifetime.
@@ -320,9 +326,9 @@ vector<string_view> pointerLexicon(const string &buffer) {
     fullOutput.clear();
     fullOutput.reserve(buffer.size());
     cout << "WHY\n";
-    size_t lineStart = 0;  // Mark the beginning of the current line
+    std::size_t lineStart = 0;  // Mark the beginning of the current line
 
-    for (size_t i = 0; i < buffer.size(); i++) {
+    for (std::size_t i = 0; i < buffer.size(); i++) {
         auto it = verification.find(buffer[i]);
         if (it == verification.end()) {
             // If the character isn't found, ignore it.
@@ -334,7 +340,7 @@ vector<string_view> pointerLexicon(const string &buffer) {
     
         // If we've hit a newline, create a view for the current line.
         if (mappedChar == '\n') {
-            size_t lineLength = fullOutput.size() - lineStart;
+            std::size_t lineLength = fullOutput.size() - lineStart;
             string_view lineView(fullOutput.data() + lineStart, lineLength);
             result.push_back(lineView);
             lineStart = fullOutput.size();
@@ -350,167 +356,68 @@ vector<string_view> pointerLexicon(const string &buffer) {
     return result;
 }
 
-void memoryLogging(vector<vector<string>> memorytable){
-    vector<string> row;
-    map<int, string> verification = {
-        {1, "|   [1]\t|\tBefore loading file"},
-        {2, "|   [2]\t|\tAfter loading file"},
-        {3, "|   [3]\t|\tAfter splitting into lines"},
-        {4, "|   [4]\t|\tAfter isolating character blocks"},
-        {5, "|   [5]\t|\t++Non-owned character blocks weight"},
-        {6, "|   [6]\t|\tAfter creating owned character blocks"},
-        {7, "|   [7]\t|\t++Owned character block weight"}
-    };
-
-    for (int i = 0; i < (memorytable.size()); i++) {
-        row = memorytable[i];
-        cout << "\n|   [" << i + 1 << "]\t|\t";
-        cout << setw(20) << row[2] << "   |   ";
-
-    }
-
-
-}
-
-#define STRING_MEMORY_LOG memorytable.push_back(byteFormat(getMemoryUsage()));
-#define T_SIZE_MEMORY_LOG memoryValues.push_back(getMemoryUsage());
-#define FINAL_INDEX memoryValues.size() - 1
-#define INCREA_MEMORY_LOG memorytable.push_back(byteFormat(memoryValues[FINAL_INDEX] - memoryValues[FINAL_INDEX-1]));
-#define DECREA_MEMORY_LOG memorytable.push_back(byteFormat(memoryValues[FINAL_INDEX-1] - memoryValues[FINAL_INDEX]));
-#define MEM_CUR return ;
-
-void memoryDefineCall(vector<vector<string>> &memorytable, vector<size_t> &memoryValues, bool spotLog, bool changeLog){
-    string flag = "";
-    STRING_MEMORY_LOG;
-    T_SIZE_MEMORY_LOG;
-
-    //cout << "\n\n[]\n" << memoryValues[FINAL_INDEX] << " - " << memoryValues[FINAL_INDEX-1] << " = " << memoryValues[FINAL_INDEX] - memoryValues[FINAL_INDEX-1] << endl;
-
-    if (spotLog == true){
-        vector<string> spotLast = memorytable[memorytable.size()-3];
-        cout << "[DEV] Current Program Memory Allocation:   " << spotLast[spotLast.size()-1] << endl;
-    }
-    if ((memoryValues[FINAL_INDEX] - memoryValues[FINAL_INDEX-1]) > 0) {
-        flag = "+";
-        INCREA_MEMORY_LOG;
-    }
-    else{
-        flag = "-";
-        DECREA_MEMORY_LOG;
-    }
-    if (changeLog == true){
-        size_t change  = memoryValues[memoryValues.size()-1];
-        vector<string> format = byteFormat(change);
-        cout << "[DEV] Program Memory  Change:    " << flag << format[1] << endl;
-    }
-    
-    
-
-} 
-
+// string reduceMemory(string &buffer, vector<string_view> characterOnly){
+//     string_view proxy;
+//     for (int i = 0; i < buffer.size(); i++){
+//         proxy = characterOnly[i];
+//         if (proxy[i] != buffer[i]){
+//             buffer.erase(i);
+//         }
+//     }
+//     return buffer;
+// }
 
 void pointerPlayOptimized(const string &filename) {
     try {
         vector<vector<string>> memorytable;
-        vector<size_t> memoryValues;
+        vector<std::size_t> memoryValues;
 
-        // Record memory usage before loading the file.
-        // 1
-        STRING_MEMORY_LOG;
-        T_SIZE_MEMORY_LOG;
-        // Load the entire file into one contiguous string.
+        // Load the entire file as one contiguous string.
+        // [1]  | Record Memory Usage | Before loading the file.
+        recordMemoryUsage(memorytable, memoryValues, true, true);
         string fileBuffer = loadFileIntoString(filename);
-        //cout << "Loaded file of size: " << fileBuffer.size() << endl;
-        // Record memory usage after loading the file.
-        // 2
-        STRING_MEMORY_LOG;      
-        T_SIZE_MEMORY_LOG;
-        // Split into lines using string_view
-        vector<string_view> totallyAssimilatedLines = pointerLexicon(fileBuffer);
-        // Record memory usage after splitting lines
-        //3
-        STRING_MEMORY_LOG;
-        T_SIZE_MEMORY_LOG;
-        vector<string_view> characterOnly = filterCharacterBlocks(totallyAssimilatedLines);
-        //cout <<"Before Function Call" << endl;
-        //4
-        STRING_MEMORY_LOG;
-        T_SIZE_MEMORY_LOG;
-        //INCREA_MEMORY_LOG;
 
-        // vector<string> ownedCharacterOnly;
-        // for (auto sv : characterOnly) {
-        //     ownedCharacterOnly.push_back(string(sv));
-        // }
-        //5
-        // STRING_MEMORY_LOG;
-        // T_SIZE_MEMORY_LOG;
-        // memoryDefineCall(memorytable, memoryValues, true, true);
+        // [2]  |  Record Memory Usage | After loading the file.
+        recordMemoryUsage(memorytable, memoryValues, true, true);
+        vector<string_view> totallyAssimilatedLines = splitLines(fileBuffer);
 
-        //cout << endl << fileBuffer.capacity() << endl;
-        // fileBuffer.erase();
-        // fileBuffer.clear();
-        // fileBuffer.shrink_to_fit();
-        //string().swap(fileBuffer);
+        // [3]  |  Record Memory Usage | After splitting lines
+        recordMemoryUsage(memorytable, memoryValues, true, true);
+        vector<string_view> characterOnly = filterCharacterBlocks(totallyAssimilatedLines, fileBuffer);
 
-        //6
-        STRING_MEMORY_LOG;
-        T_SIZE_MEMORY_LOG;
-        totallyAssimilatedLines.clear();
-        totallyAssimilatedLines.shrink_to_fit();
+        // [4]  |  Record Memory Usage | After filtering non-character blocks
+        recordMemoryUsage(memorytable, memoryValues, true, true);
+        //fileBuffer = reduceMemory(fileBuffer,characterOnly);
+
+        // totallyAssimilatedLines.clear();
+        // totallyAssimilatedLines.shrink_to_fit();
         //7
-        STRING_MEMORY_LOG;
-        T_SIZE_MEMORY_LOG;
-
+        recordMemoryUsage(memorytable, memoryValues, true, true);
         string charID = "37676";
         // vector<string> block = findBlock(totallyAssimilatedLines, charID);
         vector<string> block = findBlock(characterOnly, charID);
-        STRING_MEMORY_LOG;
-        T_SIZE_MEMORY_LOG;
-        vector<string> row;
-        for (int i = 0; i < (memorytable.size()); i++) {
-            row = memorytable[i];
-            cout << "\n|   [" << i + 1 << "]\t|\t";
-            cout << setw(20) << row[2] << "   |   ";
-            // for (int x = 0; x < (row.size()); x++) {
-            //     cout << setw(20) << row[x] << "   |   ";
-            // }
-        }
-        cout << "\n\n\n\n\n";
 
+        recordMemoryUsage(memorytable, memoryValues, true, true);
 
-    // for (int i = 0; i < (memorytable.size()); i++) {
-    //     memoryDefineCall(memorytable, memoryValues, false, false);
-    //     row = memorytable[2];
-    //     cout << "\n|   [" << i + 1 << "]\t|\t";
-    //     for (int x = 0; x < (row.size()); x++) {
-    //         cout << setw(20) << row[x] << "   |   ";
-    //     }
-    // }
+        memoryLogging(memorytable);
 
-
-
-    } catch (const exception &ex) {
+    } 
+    catch (const exception &ex) {
         cerr << "Error: " << ex.what() << "\n";
     }
-
-    
-
 }
 
 void pause(){
-    string fuck;
+    string fuckPointers;
     cout << "\nEnter anything\n> ";
-    cin >> fuck;
+    cin >> fuckPointers;
 }
 
 int main() {
-
-
-
-    string inputFile = "../gamestate";
+    string inputFile = "../../save_game/gamestate";
     pointerPlayOptimized(inputFile);
-
-
     return 0;
 }
+
+// .\universal_compiler.bat > "
+

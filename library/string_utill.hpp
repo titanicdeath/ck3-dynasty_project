@@ -5,6 +5,9 @@
 #include <iostream>
 #include <string>
 
+
+using namespace std;
+
 string formatWithCommas(string numStr);
 string trim(const string &s);
 

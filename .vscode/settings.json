@@ -13,7 +13,10 @@
         "cctype": "cpp",
         "list": "cpp",
         "algorithm": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "stdexcept": "cpp",
+        "sstream": "cpp",
+        "string_view": "cpp"
     },
-    "cmake.sourceDirectory": "C:/Users/alden/Desktop/CK3_Dynasty_Project/ck3_dynasty_tree"
+    "cmake.sourceDirectory": "C:/Users/alden/Desktop/CK3_Dynasty_Project/ck3_dynasty_tree/source"
 }

@@ -1,10 +1,13 @@
-#include "string_utill.hpp"
+#ifndef STRING_UTIL_cPP
+#define STRING_UTIL_CPP
 #include <windows.h>
 #include <psapi.h>
 #include <stdexcept>
 #include <sstream>   // if needed
 #include <vector>
 #include <string>
+
+#include "../library/string_utill.hpp"
 
 using namespace std;
 
@@ -26,15 +29,16 @@ string formatWithCommas(string numStr) {
 // trim leading/trailing whitespace
 string trim(const string &s) {
     // Find first non-whitespace
-    size_t start = 0;
+    std::size_t start = 0;
     while (start < s.size() && isspace((unsigned char)s[start])) {
         start++;
     }
     // Find last non-whitespace
-    size_t end = s.size();
+    std::size_t end = s.size();
     while (end > start && isspace((unsigned char)s[end - 1])) {
         end--;
     }
     return s.substr(start, end - start);
 }
 
+#endif 

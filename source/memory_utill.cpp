@@ -1,5 +1,8 @@
-#include "memory_utill.hpp"
-#include "string_utill.hpp"
+
+#ifndef MEMORY_UTILL_CPP
+#define MEMORY_UTILL_CPP
+#include "../library/memory_utill.hpp"
+#include "../library/string_utill.hpp"
 
 #include <windows.h>
 #include <psapi.h>
@@ -11,12 +14,16 @@
 
 using namespace std;
 
-vector<string> byteFormat(size_t bytes){
-    size_t operation = 0;
-    size_t place[5] = {bytes, 0, 0, 0, 0};
+// #define WIN32_LEAN_AND_MEAN
+// #define NOMINMAX
+
+
+vector<string> byteFormat(std::size_t bytes){
+    std::size_t operation = 0;
+    std::size_t place[5] = {bytes, 0, 0, 0, 0};
     string byteType[5] = {"bytes", "kilobytes", "megabytes", "gigabytes", "petabytes"};\
     vector<string> byteValueType;
-    for (size_t i = 0; i < 4; i++){
+    for (std::size_t i = 0; i < 4; i++){
         if (place[i] >= 1024) {
             operation = place[i];
             operation = operation / 1024;
@@ -28,14 +35,14 @@ vector<string> byteFormat(size_t bytes){
     }
     string formattedValues[5];
     string current, running = "";
-    for (size_t i = 0; i < 4; i++){
+    for (std::size_t i = 0; i < 4; i++){
         current = to_string(place[i]);
         current = formatWithCommas(current);
         formattedValues[i] = current;
     }
     string formatted = "";
     //cout << setw(20) << right;
-    for (size_t i = 0; i < 4; i++){
+    for (std::size_t i = 0; i < 4; i++){
         formatted = formattedValues[i] + " " + byteType[i]; 
         byteValueType.push_back(formatted);
     }
@@ -43,10 +50,10 @@ vector<string> byteFormat(size_t bytes){
 }
 
 // Helper function: Get current memory usage (WorkingSetSize) in bytes.
-size_t getMemoryUsage() {
+std::size_t getMemoryUsage() {
     PROCESS_MEMORY_COUNTERS pmc;
     if (GetProcessMemoryInfo(GetCurrentProcess(), &pmc, sizeof(pmc))) {
-        size_t memory = pmc.WorkingSetSize;
+        std::size_t memory = pmc.WorkingSetSize;
         //cout << format << endl;
         return memory; // in bytes
     }
@@ -80,26 +87,28 @@ void memoryLogging(vector<vector<string>> memorytable){
 }
 
 // A simple function to record memory usage into a table
-void recordMemoryUsage(vector<vector<string>> &memoryTable, vector<size_t> &memoryValues, bool showSpotLog = false, bool showChangeLog = false) {
+void recordMemoryUsage(vector<vector<string>> &memoryTable, vector<std::size_t> &memoryValues, bool showSpotLog, bool showChangeLog) {
     // 1) Get current usage
-    size_t current = getMemoryUsage();
+    std::size_t current = getMemoryUsage();
     memoryValues.push_back(current);
 
     // 2) Push it into the table as well
     // For example, the "byteFormat" function returns a vector<string>.
     auto usageStrings = byteFormat(current);
     memoryTable.push_back(usageStrings);
+    // 
+    
 
     // Optionally show the user the spot usage
     if (showSpotLog) {
     // usageStrings[1] might be the "kilobytes" string if that’s how you set up byteFormat
-    cout << "[DEV] Current Program Memory: " << usageStrings[1] << "\n";
+    cout << "[DEV] Current Program Memory: " << usageStrings[2] << "\n";
     }
 
     // If there's a previous measurement, show the difference
     if (showChangeLog && memoryValues.size() > 1) {
-    size_t prev = memoryValues[memoryValues.size() - 2];
-    size_t delta = current > prev ? current - prev : prev - current;
+    std::size_t prev = memoryValues[memoryValues.size() - 2];
+    std::size_t delta = current > prev ? current - prev : prev - current;
     auto deltaStrings = byteFormat(delta);
     char sign = (current >= prev) ? '+' : '-';
     cout << "[DEV] Program Memory Change: " << sign << deltaStrings[1] << "\n";
@@ -115,7 +124,7 @@ void recordMemoryUsage(vector<vector<string>> &memoryTable, vector<size_t> &memo
 // #define DECREA_MEMORY_LOG memorytable.push_back(byteFormat(memoryValues[FINAL_INDEX-1] - memoryValues[FINAL_INDEX]));
 // #define MEM_CUR return ;
 
-// void memoryDefineCall(vector<vector<string>> &memorytable, vector<size_t> &memoryValues, bool spotLog, bool changeLog){
+// void memoryDefineCall(vector<vector<string>> &memorytable, vector<std::size_t> &memoryValues, bool spotLog, bool changeLog){
 //     string flag = "";
 //     STRING_MEMORY_LOG;
 //     T_SIZE_MEMORY_LOG;
@@ -135,7 +144,7 @@ void recordMemoryUsage(vector<vector<string>> &memoryTable, vector<size_t> &memo
 //         DECREA_MEMORY_LOG;
 //     }
 //     if (changeLog == true){
-//         size_t change  = memoryValues[memoryValues.size()-1];
+//         std::size_t change  = memoryValues[memoryValues.size()-1];
 //         vector<string> format = byteFormat(change);
 //         cout << "[DEV] Program Memory  Change:    " << flag << format[1] << endl;
 //     }
@@ -143,3 +152,5 @@ void recordMemoryUsage(vector<vector<string>> &memoryTable, vector<size_t> &memo
     
 
 // } 
+
+#endif
