@@ -9,7 +9,11 @@
         "iosfwd": "cpp",
         "fstream": "cpp",
         "initializer_list": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "cctype": "cpp",
+        "list": "cpp",
+        "algorithm": "cpp",
+        "map": "cpp"
     },
     "cmake.sourceDirectory": "C:/Users/alden/Desktop/CK3_Dynasty_Project/ck3_dynasty_tree"
 }
