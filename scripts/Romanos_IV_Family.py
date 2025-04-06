@@ -81,4 +81,4 @@ def board(score):
     for i in range(1,17):
         print(f"{numName[i]} \t- {score[i-1]}%")
 print(3841876 - 3839740)
-#board(compare(povOption()))
+board(compare(povOption()))

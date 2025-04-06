@@ -1,0 +1,85 @@
+Folder PATH listing for volume AldenDesktop (SSD)
+Volume serial number is F4C3-C111
+C:.
+|   asus-weirdness.txt
+|   folder_structure.txt
+|   log_uni_compiler.txt
+|   README.md
+|   regular_execute.txt
+|   universal_compiler.bat
+|   
++---.vscode
+|       settings.json
+|       tasks.json
+|       
++---data_out
+|   |   test.jsonl
+|   |   
+|   \---character-archive
+|           character-archive_1.jsonl
+|           character-archive_2.jsonl
+|           character-archive_3.jsonl
+|           character-archive_4.jsonl
+|           
++---executables
+|   \---gyg
+|           archive_consolidate.exe
+|           cd
+|           prototype_version-4_parser.exe
+|           total_memory - Copy.exe
+|           total_memory.exe
+|           version-4_prototype_parser.exe
+|           
++---legacy
+|   |   Untitled-2.cpp
+|   |   
+|   +---Old
+|   |       character-block-example-37676.txt
+|   |       characters.jsonl
+|   |       character_parser.cpp
+|   |       character_parser.exe
+|   |       compile.bat
+|   |       version-2_parser.cpp
+|   |       
+|   \---version-2_era
+|           New_characters.jsonl
+|           new_compile.bat
+|           new_parser.cpp
+|           new_parser.exe
+|           own compile.bat
+|           own_parser.cpp
+|           
++---library
+|   |   json.hpp
+|   |   memory_utill.hpp
+|   |   string_utill.hpp
+|   |   
+|   \---output
+|           memory_utill.exe
+|           
++---misc_data
+|       character-block-example-37676.txt
+|       
++---save_game
+|       gamestate
+|       
++---scripts
+|       archive_consolidate.cpp
+|       key-generator.py
+|       Romanos_IV_Family.py
+|       
++---source
+|   |   memory_utill.cpp
+|   |   prototype_version-4_parser.cpp
+|   |   string_utill.cpp
+|   |   
+|   \---output
+|           prototype_version-4_parser.exe
+|           
+\---source-experimental
+        prototype_version-3_parser.cpp
+        referencing-map.cpp
+        total_memory.bat
+        total_memory.cpp
+        total_memory.exe
+        

@@ -1,0 +1,382 @@
+source\memory_utill.cpp:18: warning: "NOMINMAX" redefined
+   18 | #define NOMINMAX
+      | 
+In file included from c:\mingw64\include\c++\12.2.0\x86_64-w64-mingw32\bits\c++config.h:655,
+                 from c:\mingw64\include\c++\12.2.0\iomanip:38,
+                 from source\../library/memory_utill.hpp:4,
+                 from source\memory_utill.cpp:4:
+c:\mingw64\include\c++\12.2.0\x86_64-w64-mingw32\bits\os_defines.h:45: note: this is the location of the previous definition
+   45 | #define NOMINMAX 1
+      | 
+In file included from c:\mingw64\x86_64-w64-mingw32\include\wtypes.h:8,
+                 from c:\mingw64\x86_64-w64-mingw32\include\winscard.h:10,
+                 from c:\mingw64\x86_64-w64-mingw32\include\windows.h:97,
+                 from source\memory_utill.cpp:7:
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:64:11: error: reference to 'byte' is ambiguous
+   64 |   typedef byte cs_byte;
+      |           ^~~~
+In file included from source\../library/memory_utill.hpp:5:
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:397:170: error: reference to 'byte' is ambiguous
+  397 |   typedef void (__RPC_API *CS_TYPE_TO_NETCS_ROUTINE)(RPC_BINDING_HANDLE hBinding,unsigned __LONG32 ulNetworkCodeSet,void *pLocalData,unsigned __LONG32 ulLocalDataLength,byte *pNetworkData,unsigned __LONG32 *pulNetworkDataLength,error_status_t *pStatus);
+      |                                                                                                                                                                          ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:397:170: error: 'byte' has not been declared
+  397 |   typedef void (__RPC_API *CS_TYPE_TO_NETCS_ROUTINE)(RPC_BINDING_HANDLE hBinding,unsigned __LONG32 ulNetworkCodeSet,void *pLocalData,unsigned __LONG32 ulLocalDataLength,byte *pNetworkData,unsigned __LONG32 *pulNetworkDataLength,error_status_t *pStatus);
+      |                                                                                                                                                                          ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:398:119: error: reference to 'byte' is ambiguous
+  398 |   typedef void (__RPC_API *CS_TYPE_FROM_NETCS_ROUTINE)(RPC_BINDING_HANDLE hBinding,unsigned __LONG32 ulNetworkCodeSet,byte *pNetworkData,unsigned __LONG32 ulNetworkDataLength,unsigned __LONG32 ulLocalBufferSize,void *pLocalData,unsigned __LONG32 *pulLocalDataLength,error_status_t *pStatus);
+      |                                                                                                                       ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:398:119: error: 'byte' has not been declared
+  398 |   typedef void (__RPC_API *CS_TYPE_FROM_NETCS_ROUTINE)(RPC_BINDING_HANDLE hBinding,unsigned __LONG32 ulNetworkCodeSet,byte *pNetworkData,unsigned __LONG32 ulNetworkDataLength,unsigned __LONG32 ulLocalBufferSize,void *pLocalData,unsigned __LONG32 *pulLocalDataLength,error_status_t *pStatus);
+      |                                                                                                                       ^~~~
+In file included from c:\mingw64\x86_64-w64-mingw32\include\combaseapi.h:153,
+                 from c:\mingw64\x86_64-w64-mingw32\include\objbase.h:14,
+                 from c:\mingw64\x86_64-w64-mingw32\include\ole2.h:17,
+                 from c:\mingw64\x86_64-w64-mingw32\include\wtypes.h:13:
+c:\mingw64\x86_64-w64-mingw32\include\wtypesbase.h:319:5: error: reference to 'byte' is ambiguous
+  319 |     byte abData[1];
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\wtypesbase.h:341:5: error: reference to 'byte' is ambiguous
+  341 |     byte abData[1];
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\wtypesbase.h:356:5: error: reference to 'byte' is ambiguous
+  356 |     byte *pData;
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+In file included from c:\mingw64\x86_64-w64-mingw32\include\combaseapi.h:155:
+c:\mingw64\x86_64-w64-mingw32\include\objidlbase.h:1993:5: error: reference to 'byte' is ambiguous
+ 1993 |     byte *pv,
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidlbase.h:1993:5: error: 'byte' has not been declared
+ 1993 |     byte *pv,
+      |     ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidlbase.h:2003:11: error: reference to 'byte' is ambiguous
+ 2003 |     const byte *pv,
+      |           ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidlbase.h:2018:5: error: reference to 'byte' is ambiguous
+ 2018 |     byte *pv,
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidlbase.h:2018:5: error: 'byte' has not been declared
+ 2018 |     byte *pv,
+      |     ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidlbase.h:2028:11: error: reference to 'byte' is ambiguous
+ 2028 |     const byte *pv,
+      |           ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+In file included from c:\mingw64\x86_64-w64-mingw32\include\unknwn.h:47,
+                 from c:\mingw64\x86_64-w64-mingw32\include\objidl.h:759,
+                 from c:\mingw64\x86_64-w64-mingw32\include\objbase.h:66:
+c:\mingw64\x86_64-w64-mingw32\include\wtypes.h:46:5: error: reference to 'byte' is ambiguous
+   46 |     byte data[1];
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\wtypes.h:54:5: error: reference to 'byte' is ambiguous
+   54 |     byte data[1];
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\wtypes.h:59:5: error: reference to 'byte' is ambiguous
+   59 |     byte data[1];
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\wtypes.h:63:5: error: reference to 'byte' is ambiguous
+   63 |     byte data[1];
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\wtypes.h:68:5: error: reference to 'byte' is ambiguous
+   68 |     byte data[1];
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\wtypes.h:73:5: error: reference to 'byte' is ambiguous
+   73 |     byte data[1];
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\wtypes.h:299:5: error: reference to 'byte' is ambiguous
+  299 |     byte pBuffer[1];
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:8445:9: error: reference to 'byte' is ambiguous
+ 8445 |         byte *pbData,
+      |         ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:8445:9: error: 'byte' has not been declared
+ 8445 |         byte *pbData,
+      |         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:8953:5: error: reference to 'byte' is ambiguous
+ 8953 |     byte *reserved1,
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:8953:5: error: 'byte' has not been declared
+ 8953 |     byte *reserved1,
+      |     ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:8977:5: error: reference to 'byte' is ambiguous
+ 8977 |     byte *reserved2,
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:8977:5: error: 'byte' has not been declared
+ 8977 |     byte *reserved2,
+      |     ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:8996:5: error: reference to 'byte' is ambiguous
+ 8996 |     byte *reserved1,
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:8996:5: error: 'byte' has not been declared
+ 8996 |     byte *reserved1,
+      |     ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:9022:5: error: reference to 'byte' is ambiguous
+ 9022 |     byte *reserved2,
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:9022:5: error: 'byte' has not been declared
+ 9022 |     byte *reserved2,
+      |     ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:9477:5: error: reference to 'byte' is ambiguous
+ 9477 |     byte *pv,
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:9477:5: error: 'byte' has not been declared
+ 9477 |     byte *pv,
+      |     ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:9488:11: error: reference to 'byte' is ambiguous
+ 9488 |     const byte *pv,
+      |           ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:9505:5: error: reference to 'byte' is ambiguous
+ 9505 |     byte *pv,
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:9505:5: error: 'byte' has not been declared
+ 9505 |     byte *pv,
+      |     ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:9517:11: error: reference to 'byte' is ambiguous
+ 9517 |     const byte *pv,
+      |           ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:9925:5: error: reference to 'byte' is ambiguous
+ 9925 |     byte data[1];
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:11390:11: error: reference to 'byte' is ambiguous
+11390 |     const byte *pv,
+      |           ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:11401:11: error: reference to 'byte' is ambiguous
+11401 |     const byte *pv,
+      |           ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:11416:11: error: reference to 'byte' is ambiguous
+11416 |     const byte *pv,
+      |           ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\objidl.h:11428:11: error: reference to 'byte' is ambiguous
+11428 |     const byte *pv,
+      |           ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+In file included from c:\mingw64\x86_64-w64-mingw32\include\msxml.h:25,
+                 from c:\mingw64\x86_64-w64-mingw32\include\urlmon.h:450,
+                 from c:\mingw64\x86_64-w64-mingw32\include\objbase.h:163:
+c:\mingw64\x86_64-w64-mingw32\include\oaidl.h:579:5: error: reference to 'byte' is ambiguous
+  579 |     byte *pRecord;
+      |     ^~~~
+c:\mingw64\include\c++\12.2.0\cstddef:69:14: note: candidates are: 'enum class std::byte'
+   69 |   enum class byte : unsigned char {};
+      |              ^~~~
+c:\mingw64\x86_64-w64-mingw32\include\rpcndr.h:63:25: note:                 'typedef unsigned char byte'
+   63 |   typedef unsigned char byte;
+      |                         ^~~~
+source\memory_utill.cpp: In function 'void memoryLogging(std::vector<std::vector<std::__cxx11::basic_string<char> > >)':
+source\memory_utill.cpp:82:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::vector<std::__cxx11::basic_string<char> > >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   82 |     for (int i = 0; i < (memorytable.size()); i++) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from source\prototype_version-4_parser.cpp:21:
+source\../source/memory_utill.cpp:18: warning: "NOMINMAX" redefined
+   18 | #define NOMINMAX
+      | 
+In file included from c:\mingw64\include\c++\12.2.0\x86_64-w64-mingw32\bits\c++config.h:655,
+                 from c:\mingw64\include\c++\12.2.0\cstdlib:41,
+                 from c:\mingw64\include\c++\12.2.0\stdlib.h:36,
+                 from c:\mingw64\lib\gcc\x86_64-w64-mingw32\12.2.0\include\mm_malloc.h:27,
+                 from c:\mingw64\lib\gcc\x86_64-w64-mingw32\12.2.0\include\xmmintrin.h:34,
+                 from c:\mingw64\lib\gcc\x86_64-w64-mingw32\12.2.0\include\immintrin.h:31,
+                 from c:\mingw64\lib\gcc\x86_64-w64-mingw32\12.2.0\include\x86intrin.h:32,
+                 from c:\mingw64\x86_64-w64-mingw32\include\winnt.h:1555,
+                 from c:\mingw64\x86_64-w64-mingw32\include\minwindef.h:163,
+                 from c:\mingw64\x86_64-w64-mingw32\include\windef.h:9,
+                 from c:\mingw64\x86_64-w64-mingw32\include\windows.h:69,
+                 from source\prototype_version-4_parser.cpp:1:
+c:\mingw64\include\c++\12.2.0\x86_64-w64-mingw32\bits\os_defines.h:45: note: this is the location of the previous definition
+   45 | #define NOMINMAX 1
+      | 
+source\../source/memory_utill.cpp: In function 'void memoryLogging(std::vector<std::vector<std::__cxx11::basic_string<char> > >)':
+source\../source/memory_utill.cpp:82:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::vector<std::__cxx11::basic_string<char> > >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   82 |     for (int i = 0; i < (memorytable.size()); i++) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~
+source\prototype_version-4_parser.cpp: In function 'bool firstNameCheck(std::string_view, std::string)':
+source\prototype_version-4_parser.cpp:68:15: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   68 |     if (total == check.size()){
+      |         ~~~~~~^~~~~~~~~~~~~~~
+source\prototype_version-4_parser.cpp: In function 'std::vector<std::basic_string_view<char> > filterCharacterBlocks(const std::vector<std::basic_string_view<char> >&)':
+source\prototype_version-4_parser.cpp:107:22: warning: variable 'ltrim' set but not used [-Wunused-but-set-variable]
+  107 |                 auto ltrim = [](string_view sv) {
+      |                      ^~~~~

@@ -181,7 +181,6 @@ int main()
         "dynasty_house",
         "dna",
         "spouse",
-        "former_spouses",    // or "former_spouses" if that is the correct name in your text
         "child",
         "date",
         "reason",

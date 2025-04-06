@@ -10,5 +10,5 @@ using namespace std;
 
 string formatWithCommas(string numStr);
 string trim(const string &s);
-
-#endif 
+bool keyCheck(string_view current, const string check);
+#endif  

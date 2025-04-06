@@ -1,0 +1,1599 @@
+Folder PATH listing for volume OS
+Volume serial number is 16D5-B2F6
+C:.
+|   asus_framework.exe
+|   asus_framework.exe.manifest
+|   asus_framework.VisualElementsManifest.xml
+|   chrome_100_percent.pak
+|   chrome_200_percent.pak
+|   d3dcompiler_47.dll
+|   debug.log
+|   ffmpeg.dll
+|   icudtl.dat
+|   libEGL.dll
+|   libGLESv2.dll
+|   LICENSE
+|   LICENSES.chromium.html
+|   MD5.ini
+|   resources.pak
+|   snapshot_blob.bin
+|   v8_context_snapshot.bin
+|   version
+|   vk_swiftshader.dll
+|   vk_swiftshader_icd.json
+|   vulkan-1.dll
+|   
++---dll
+|   |   ArmourySDK.dll
+|   |   config.ini
+|   |   InstallHelper.dll
+|   |   MD5.ini
+|   |   Process.ini
+|   |   
+|   +---AcPowerNotification
+|   |       ACLOGGER.dll
+|   |       AcPowerNotification.exe
+|   |       AcPowerNotification.exe.config
+|   |       Booster_DLL.dll
+|   |       licenses.txt
+|   |       Microsoft.Bcl.AsyncInterfaces.dll
+|   |       Microsoft.Win32.Registry.dll
+|   |       NAudio.Asio.dll
+|   |       NAudio.Core.dll
+|   |       NAudio.dll
+|   |       NAudio.Midi.dll
+|   |       NAudio.Wasapi.dll
+|   |       NAudio.WinForms.dll
+|   |       NAudio.WinMM.dll
+|   |       System.Buffers.dll
+|   |       System.Memory.dll
+|   |       System.Numerics.Vectors.dll
+|   |       System.Runtime.CompilerServices.Unsafe.dll
+|   |       System.Runtime.WindowsRuntime.dll
+|   |       System.Runtime.WindowsRuntime.UI.Xaml.dll
+|   |       System.Security.AccessControl.dll
+|   |       System.Security.Principal.Windows.dll
+|   |       System.Text.Encodings.Web.dll
+|   |       System.Text.Json.dll
+|   |       System.Threading.Tasks.Extensions.dll
+|   |       System.ValueTuple.dll
+|   |       UnifyDeviceDetector.dll
+|   |       UnifyScanner.dll
+|   |       websocket-sharp.dll
+|   |       
+|   +---ArmourySocketServer
+|   |   |   ArmouryHtmlDebugServer.exe
+|   |   |   ArmourySocketServer.exe
+|   |   |   ArmourySocketServer.VisualElementsManifest.xml
+|   |   |   AuraIC_x64.dll
+|   |   |   libcrypto-1_1-x64.dll
+|   |   |   libssl-1_1-x64.dll
+|   |   |   licenses.txt
+|   |   |   PreUninstallArmourySocketServer.exe
+|   |   |   server.pem
+|   |   |   
+|   |   +---device_language
+|   |   |       Czech.xml
+|   |   |       Danish.xml
+|   |   |       Dutch.xml
+|   |   |       English.xml
+|   |   |       Finnish.xml
+|   |   |       French.xml
+|   |   |       German.xml
+|   |   |       Indonesia.xml
+|   |   |       Italian.xml
+|   |   |       Japanese.xml
+|   |   |       Korean.xml
+|   |   |       Norwegian.xml
+|   |   |       Polish.xml
+|   |   |       Portuguese.xml
+|   |   |       Romanian.xml
+|   |   |       Russian.xml
+|   |   |       Simplified Chinese.xml
+|   |   |       Spanish.xml
+|   |   |       Swedish.xml
+|   |   |       Thai.xml
+|   |   |       Traditional Chinese.xml
+|   |   |       Turkish.xml
+|   |   |       Ukrainian.xml
+|   |   |       
+|   |   \---Resource
+|   |           5stage_1.png
+|   |           rapid-fire-off@2x.png
+|   |           rapid-fire-on@2x.png
+|   |           
+|   +---FilterDriver
+|   |   |   AsFilterDriver.dll
+|   |   |   AsFilterDriver.ini
+|   |   |   AsFilterDriverEx.exe
+|   |   |   
+|   |   \---x64
+|   |       |   devcon.exe
+|   |       |   
+|   |       +---Win10
+|   |       |   +---ROGKB
+|   |       |   |       ROGKB.inf
+|   |       |   |       ROGKB.sys
+|   |       |   |       rogkb64.cat
+|   |       |   |       
+|   |       |   \---ROGMS
+|   |       |           ArmouryLiveUpdate.exe
+|   |       |           ArmouryUpdate.exe
+|   |       |           AsusLiveUpdateDeEncrypt.dll
+|   |       |           AsZip.dll
+|   |       |           EzULIB_UFB.dll
+|   |       |           killproc.exe
+|   |       |           ROGMS.inf
+|   |       |           ROGMS.sys
+|   |       |           rogms64.cat
+|   |       |           
+|   |       \---Win11
+|   |           +---ROGKB
+|   |           |       ROGKB.inf
+|   |           |       ROGKB.sys
+|   |           |       rogkb64.cat
+|   |           |       
+|   |           \---ROGMS
+|   |                   ArmouryLiveUpdate.exe
+|   |                   ArmouryUpdate.exe
+|   |                   AsusLiveUpdateDeEncrypt.dll
+|   |                   AsZip.dll
+|   |                   EzULIB_UFB.dll
+|   |                   killproc.exe
+|   |                   ROGMS.inf
+|   |                   ROGMS.sys
+|   |                   rogms64.cat
+|   |                   
+|   +---Schedule
+|   |       AsTaskSched.dll
+|   |       AsTaskSchedArg.exe
+|   |       KillProc_framewoork.exe
+|   |       RegSchdTask.exe
+|   |       
+|   +---ShareFromArmouryIII
+|   |   |   config.ini
+|   |   |   
+|   |   \---Mouse
+|   |       +---ROG Strix Impact
+|   |       |   |   P303LocalUpdate.exe
+|   |       |   |   
+|   |       |   +---MultiLang_P303
+|   |       |   |       English.ini
+|   |       |   |       French.ini
+|   |       |   |       Geman.ini
+|   |       |   |       Italian.ini
+|   |       |   |       Japanese.ini
+|   |       |   |       Korean.ini
+|   |       |   |       Portuguese.ini
+|   |       |   |       Russian.ini
+|   |       |   |       Simplified Chinese.ini
+|   |       |   |       Spanish.ini
+|   |       |   |       Traditional Chinese.ini
+|   |       |   |       Turkish.ini
+|   |       |   |       
+|   |       |   +---Resource_P303
+|   |       |   |   +---ASUS
+|   |       |   |   |   +---Button
+|   |       |   |   |   |       btm_d.png
+|   |       |   |   |   |       btm_n.png
+|   |       |   |   |   |       btm_o.png
+|   |       |   |   |   |       btm_un.png
+|   |       |   |   |   |       
+|   |       |   |   |   +---Image
+|   |       |   |   |   |       Armoury-icon_w.ico
+|   |       |   |   |   |       update_bg.png
+|   |       |   |   |   |       
+|   |       |   |   |   \---ProgressBar
+|   |       |   |   |           1x8_progressbar_red.png
+|   |       |   |   |           277x8_progressbar_bg.png
+|   |       |   |   |           
+|   |       |   |   +---Button
+|   |       |   |   |       bigbtm_d.png
+|   |       |   |   |       bigbtm_n.png
+|   |       |   |   |       bigbtm_o.png
+|   |       |   |   |       bigbtm_un.png
+|   |       |   |   |       blue.png
+|   |       |   |   |       btm_d.png
+|   |       |   |   |       btm_n.png
+|   |       |   |   |       btm_o.png
+|   |       |   |   |       btm_un.png
+|   |       |   |   |       btn_big_d.png
+|   |       |   |   |       btn_big_n.png
+|   |       |   |   |       btn_big_o.png
+|   |       |   |   |       btn_s_d.png
+|   |       |   |   |       btn_s_n.png
+|   |       |   |   |       close_d.png
+|   |       |   |   |       close_n.png
+|   |       |   |   |       close_o.png
+|   |       |   |   |       green.png
+|   |       |   |   |       link_profile_d.png
+|   |       |   |   |       link_profile_n.png
+|   |       |   |   |       red.png
+|   |       |   |   |       
+|   |       |   |   +---Image
+|   |       |   |   |       Armoury-icon_w.ico
+|   |       |   |   |       main_s_bg.png
+|   |       |   |   |       popup_bg.png
+|   |       |   |   |       update_bg.png
+|   |       |   |   |       warning_s_bg.png
+|   |       |   |   |       
+|   |       |   |   +---Mask
+|   |       |   |   |       loading_mask.png
+|   |       |   |   |       
+|   |       |   |   +---ProArt
+|   |       |   |   |   +---Button
+|   |       |   |   |   |       btm_d.png
+|   |       |   |   |   |       btm_n.png
+|   |       |   |   |   |       btm_o.png
+|   |       |   |   |   |       btm_un.png
+|   |       |   |   |   |       
+|   |       |   |   |   +---Image
+|   |       |   |   |   |       Armoury-icon_w.ico
+|   |       |   |   |   |       update_bg.png
+|   |       |   |   |   |       
+|   |       |   |   |   \---ProgressBar
+|   |       |   |   |           1x8_progressbar_red.png
+|   |       |   |   |           277x8_progressbar_bg.png
+|   |       |   |   |           
+|   |       |   |   +---ProgressBar
+|   |       |   |   |       1x8_progressbar_red.png
+|   |       |   |   |       277x8_progressbar_bg.png
+|   |       |   |   |       
+|   |       |   |   +---TextBox
+|   |       |   |   |       textfield_s_n.png
+|   |       |   |   |       
+|   |       |   |   \---TUF
+|   |       |   |       +---Button
+|   |       |   |       |       btm_d.png
+|   |       |   |       |       btm_n.png
+|   |       |   |       |       btm_o.png
+|   |       |   |       |       btm_un.png
+|   |       |   |       |       
+|   |       |   |       +---Image
+|   |       |   |       |       Armoury-icon_w.ico
+|   |       |   |       |       update_bg.png
+|   |       |   |       |       
+|   |       |   |       \---ProgressBar
+|   |       |   |               1x8_progressbar_red.png
+|   |       |   |               277x8_progressbar_bg.png
+|   |       |   |               
+|   |       |   \---Upgrade_P303
+|   |       |           Device.ini
+|   |       |           FW.hex
+|   |       |           ISP.exe
+|   |       |           LocalVersion.ini
+|   |       |           SnxHidLib.DLL
+|   |       |           
+|   |       +---TUF GAMING M3
+|   |       |   |   P305LocalUpdate.exe
+|   |       |   |   
+|   |       |   +---MultiLang_P305
+|   |       |   |       English.ini
+|   |       |   |       French.ini
+|   |       |   |       Geman.ini
+|   |       |   |       Italian.ini
+|   |       |   |       Japanese.ini
+|   |       |   |       Korean.ini
+|   |       |   |       Portuguese.ini
+|   |       |   |       Russian.ini
+|   |       |   |       Simplified Chinese.ini
+|   |       |   |       Spanish.ini
+|   |       |   |       Traditional Chinese.ini
+|   |       |   |       Turkish.ini
+|   |       |   |       
+|   |       |   +---Resource_P305
+|   |       |   |   +---ASUS
+|   |       |   |   |   +---Button
+|   |       |   |   |   |       btm_d.png
+|   |       |   |   |   |       btm_n.png
+|   |       |   |   |   |       btm_o.png
+|   |       |   |   |   |       btm_un.png
+|   |       |   |   |   |       
+|   |       |   |   |   +---Image
+|   |       |   |   |   |       Armoury-icon_w.ico
+|   |       |   |   |   |       update_bg.png
+|   |       |   |   |   |       
+|   |       |   |   |   \---ProgressBar
+|   |       |   |   |           1x8_progressbar_red.png
+|   |       |   |   |           277x8_progressbar_bg.png
+|   |       |   |   |           
+|   |       |   |   +---Button
+|   |       |   |   |       bigbtm_d.png
+|   |       |   |   |       bigbtm_n.png
+|   |       |   |   |       bigbtm_o.png
+|   |       |   |   |       bigbtm_un.png
+|   |       |   |   |       blue.png
+|   |       |   |   |       btm_d.png
+|   |       |   |   |       btm_n.png
+|   |       |   |   |       btm_o.png
+|   |       |   |   |       btm_un.png
+|   |       |   |   |       btn_big_d.png
+|   |       |   |   |       btn_big_n.png
+|   |       |   |   |       btn_big_o.png
+|   |       |   |   |       btn_s_d.png
+|   |       |   |   |       btn_s_n.png
+|   |       |   |   |       close_d.png
+|   |       |   |   |       close_n.png
+|   |       |   |   |       close_o.png
+|   |       |   |   |       green.png
+|   |       |   |   |       link_profile_d.png
+|   |       |   |   |       link_profile_n.png
+|   |       |   |   |       red.png
+|   |       |   |   |       
+|   |       |   |   +---Image
+|   |       |   |   |       Armoury-icon_w.ico
+|   |       |   |   |       main_s_bg.png
+|   |       |   |   |       popup_bg.png
+|   |       |   |   |       update_bg.png
+|   |       |   |   |       warning_s_bg.png
+|   |       |   |   |       
+|   |       |   |   +---Mask
+|   |       |   |   |       loading_mask.png
+|   |       |   |   |       
+|   |       |   |   +---ProArt
+|   |       |   |   |   +---Button
+|   |       |   |   |   |       btm_d.png
+|   |       |   |   |   |       btm_n.png
+|   |       |   |   |   |       btm_o.png
+|   |       |   |   |   |       btm_un.png
+|   |       |   |   |   |       
+|   |       |   |   |   +---Image
+|   |       |   |   |   |       Armoury-icon_w.ico
+|   |       |   |   |   |       update_bg.png
+|   |       |   |   |   |       
+|   |       |   |   |   \---ProgressBar
+|   |       |   |   |           1x8_progressbar_red.png
+|   |       |   |   |           277x8_progressbar_bg.png
+|   |       |   |   |           
+|   |       |   |   +---ProgressBar
+|   |       |   |   |       1x8_progressbar_red.png
+|   |       |   |   |       277x8_progressbar_bg.png
+|   |       |   |   |       
+|   |       |   |   +---TextBox
+|   |       |   |   |       textfield_s_n.png
+|   |       |   |   |       
+|   |       |   |   \---TUF
+|   |       |   |       +---Button
+|   |       |   |       |       btm_d.png
+|   |       |   |       |       btm_n.png
+|   |       |   |       |       btm_o.png
+|   |       |   |       |       btm_un.png
+|   |       |   |       |       
+|   |       |   |       +---Image
+|   |       |   |       |       Armoury-icon_w.ico
+|   |       |   |       |       update_bg.png
+|   |       |   |       |       
+|   |       |   |       \---ProgressBar
+|   |       |   |               1x8_progressbar_red.png
+|   |       |   |               277x8_progressbar_bg.png
+|   |       |   |               
+|   |       |   \---Upgrade_P305
+|   |       |           Common.dll
+|   |       |           CyUSB.dll
+|   |       |           firmware.dld
+|   |       |           P305_FWUpdateTool.exe
+|   |       |           
+|   |       \---TUF GAMING P308
+|   |           |   P305LocalUpdate.exe
+|   |           |   
+|   |           +---MultiLang_P305
+|   |           |       English.ini
+|   |           |       French.ini
+|   |           |       Geman.ini
+|   |           |       Italian.ini
+|   |           |       Japanese.ini
+|   |           |       Korean.ini
+|   |           |       Portuguese.ini
+|   |           |       Russian.ini
+|   |           |       Simplified Chinese.ini
+|   |           |       Spanish.ini
+|   |           |       Traditional Chinese.ini
+|   |           |       Turkish.ini
+|   |           |       
+|   |           +---Resource_P305
+|   |           |   +---ASUS
+|   |           |   |   +---Button
+|   |           |   |   |       btm_d.png
+|   |           |   |   |       btm_n.png
+|   |           |   |   |       btm_o.png
+|   |           |   |   |       btm_un.png
+|   |           |   |   |       
+|   |           |   |   +---Image
+|   |           |   |   |       Armoury-icon_w.ico
+|   |           |   |   |       update_bg.png
+|   |           |   |   |       
+|   |           |   |   \---ProgressBar
+|   |           |   |           1x8_progressbar_red.png
+|   |           |   |           277x8_progressbar_bg.png
+|   |           |   |           
+|   |           |   +---Button
+|   |           |   |       bigbtm_d.png
+|   |           |   |       bigbtm_n.png
+|   |           |   |       bigbtm_o.png
+|   |           |   |       bigbtm_un.png
+|   |           |   |       blue.png
+|   |           |   |       btm_d.png
+|   |           |   |       btm_n.png
+|   |           |   |       btm_o.png
+|   |           |   |       btm_un.png
+|   |           |   |       btn_big_d.png
+|   |           |   |       btn_big_n.png
+|   |           |   |       btn_big_o.png
+|   |           |   |       btn_s_d.png
+|   |           |   |       btn_s_n.png
+|   |           |   |       close_d.png
+|   |           |   |       close_n.png
+|   |           |   |       close_o.png
+|   |           |   |       green.png
+|   |           |   |       link_profile_d.png
+|   |           |   |       link_profile_n.png
+|   |           |   |       red.png
+|   |           |   |       
+|   |           |   +---Image
+|   |           |   |       Armoury-icon_w.ico
+|   |           |   |       main_s_bg.png
+|   |           |   |       popup_bg.png
+|   |           |   |       update_bg.png
+|   |           |   |       warning_s_bg.png
+|   |           |   |       
+|   |           |   +---Mask
+|   |           |   |       loading_mask.png
+|   |           |   |       
+|   |           |   +---ProArt
+|   |           |   |   +---Button
+|   |           |   |   |       btm_d.png
+|   |           |   |   |       btm_n.png
+|   |           |   |   |       btm_o.png
+|   |           |   |   |       btm_un.png
+|   |           |   |   |       
+|   |           |   |   +---Image
+|   |           |   |   |       Armoury-icon_w.ico
+|   |           |   |   |       update_bg.png
+|   |           |   |   |       
+|   |           |   |   \---ProgressBar
+|   |           |   |           1x8_progressbar_red.png
+|   |           |   |           277x8_progressbar_bg.png
+|   |           |   |           
+|   |           |   +---ProgressBar
+|   |           |   |       1x8_progressbar_red.png
+|   |           |   |       277x8_progressbar_bg.png
+|   |           |   |       
+|   |           |   +---TextBox
+|   |           |   |       textfield_s_n.png
+|   |           |   |       
+|   |           |   \---TUF
+|   |           |       +---Button
+|   |           |       |       btm_d.png
+|   |           |       |       btm_n.png
+|   |           |       |       btm_o.png
+|   |           |       |       btm_un.png
+|   |           |       |       
+|   |           |       +---Image
+|   |           |       |       Armoury-icon_w.ico
+|   |           |       |       update_bg.png
+|   |           |       |       
+|   |           |       \---ProgressBar
+|   |           |               1x8_progressbar_red.png
+|   |           |               277x8_progressbar_bg.png
+|   |           |               
+|   |           \---Upgrade_P305
+|   |                   Common.dll
+|   |                   CyUSB.dll
+|   |                   firmware.dld
+|   |                   P308_FWUpdateTool.exe
+|   |                   
+|   +---SwAgent
+|   |   |   AcSwFuncSupportTools.dll
+|   |   |   ArmourySwAgent.exe
+|   |   |   AsAcpi.dll
+|   |   |   asacpiEx.dll
+|   |   |   fan.ini
+|   |   |   MacroControl.dll
+|   |   |   mute.dll
+|   |   |   ScreenColorLib.dll
+|   |   |   
+|   |   +---CursorAnimation
+|   |   |       01.png
+|   |   |       02.png
+|   |   |       03.png
+|   |   |       04.png
+|   |   |       05.png
+|   |   |       06.png
+|   |   |       07.png
+|   |   |       08.png
+|   |   |       09.png
+|   |   |       10.png
+|   |   |       11.png
+|   |   |       12.png
+|   |   |       13.png
+|   |   |       14.png
+|   |   |       15.png
+|   |   |       16.png
+|   |   |       17.png
+|   |   |       18.png
+|   |   |       19.png
+|   |   |       
+|   |   +---FanOSD
+|   |   |   |   AsMultiLang.dll
+|   |   |   |   FanOSD.exe
+|   |   |   |   FanOSD.exe.manifest
+|   |   |   |   OSD_FullSpeed.png
+|   |   |   |   OSD_Silent.png
+|   |   |   |   OSD_Standard.png
+|   |   |   |   OSD_Turbo.png
+|   |   |   |   Setting.ini
+|   |   |   |   
+|   |   |   \---LangFiles
+|   |   |       |   AsMultiLang.ini
+|   |   |       |   
+|   |   |       +---English
+|   |   |       |       English.ini
+|   |   |       |       
+|   |   |       +---French
+|   |   |       |       French.ini
+|   |   |       |       
+|   |   |       +---German
+|   |   |       |       German.ini
+|   |   |       |       
+|   |   |       +---Japanese
+|   |   |       |       Japanese.ini
+|   |   |       |       
+|   |   |       +---Russian
+|   |   |       |       Russian.ini
+|   |   |       |       
+|   |   |       +---SChinese
+|   |   |       |       SChinese.ini
+|   |   |       |       
+|   |   |       +---Spanish
+|   |   |       |       Spanish.ini
+|   |   |       |       
+|   |   |       \---TChinese
+|   |   |               TChinese.ini
+|   |   |               
+|   |   +---MultiLang
+|   |   |       English.ini
+|   |   |       French.ini
+|   |   |       Geman.ini
+|   |   |       Italian.ini
+|   |   |       Japanese.ini
+|   |   |       Korean.ini
+|   |   |       Portuguese.ini
+|   |   |       Russian.ini
+|   |   |       Simplified Chinese.ini
+|   |   |       Spanish.ini
+|   |   |       Traditional Chinese.ini
+|   |   |       Turkish.ini
+|   |   |       
+|   |   \---Theme
+|   |       |   Armoury-icon_w.ico
+|   |       |   
+|   |       +---ASUS
+|   |       |       btn_d.png
+|   |       |       btn_n.png
+|   |       |       btn_o.png
+|   |       |       btn_un.png
+|   |       |       main_s_bg.png
+|   |       |       style.ini
+|   |       |       
+|   |       +---ProArt
+|   |       |       btn_d.png
+|   |       |       btn_n.png
+|   |       |       btn_o.png
+|   |       |       btn_un.png
+|   |       |       main_s_bg.png
+|   |       |       style.ini
+|   |       |       
+|   |       +---ROG
+|   |       |       btn_d.png
+|   |       |       btn_n.png
+|   |       |       btn_o.png
+|   |       |       btn_un.png
+|   |       |       main_s_bg.png
+|   |       |       style.ini
+|   |       |       
+|   |       \---TUF
+|   |               btn_d.png
+|   |               btn_n.png
+|   |               btn_o.png
+|   |               btn_un.png
+|   |               main_s_bg.png
+|   |               style.ini
+|   |               
+|   \---Tools
+|           AsTaskSched.dll
+|           RegSchdTask.exe
+|           RegSchdTask.exe.manifest
+|           
++---locales
++---resources
+|   |   app.asar
+|   |   
+|   \---app.asar.unpacked
+|       \---node_modules
+|           +---@img
+|           |   \---sharp-win32-ia32
+|           |       \---lib
+|           |               libvips-42.dll
+|           |               libvips-cpp.dll
+|           |               sharp-win32-ia32.node
+|           |               
+|           \---ac_node_addon
+|               \---build
+|                   \---Release
+|                           ac_node_addon.node
+|                           config.ini
+|                           UnifyDeviceDetector.dll
+|                           UnifyScanner.dll
+|                           
+\---view
+    +---AC_CustomHotkey
+    |   |   favicon.ico
+    |   |   index.html
+    |   |   MD5.ini
+    |   |   
+    |   +---css
+    |   |       app.a15f17ca.css
+    |   |       
+    |   +---fonts
+    |   |       ROGFonts-Regular.21e61c84.ttf
+    |   |       ROGFonts-Regular.550262ea.otf
+    |   |       ROGFonts-Regular.92037469.eot
+    |   |       ROGFonts-Regular.f4c03c92.woff
+    |   |       
+    |   +---img
+    |   |       arrow_down.00d6e0b7.png
+    |   |       asus_ac_btn1_d_l.132447fb.png
+    |   |       asus_ac_btn1_d_l.d540d5fd.png
+    |   |       asus_ac_btn1_d_l.dd18362e.png
+    |   |       asus_ac_btn1_d_m.64cfdcb6.png
+    |   |       asus_ac_btn1_d_m.6845f6f6.png
+    |   |       asus_ac_btn1_d_m.ed80b08e.png
+    |   |       asus_ac_btn1_d_r.50ecffa6.png
+    |   |       asus_ac_btn1_d_r.cfd90ffc.png
+    |   |       asus_ac_btn1_d_r.d2956682.png
+    |   |       asus_ac_btn1_h_l.3365469b.png
+    |   |       asus_ac_btn1_h_l.6b1acb2b.png
+    |   |       asus_ac_btn1_h_l.e9453ca0.png
+    |   |       asus_ac_btn1_h_m.95d42c78.png
+    |   |       asus_ac_btn1_h_m.d4e2056d.png
+    |   |       asus_ac_btn1_h_m.dd1b5e79.png
+    |   |       asus_ac_btn1_h_r.ced8edeb.png
+    |   |       asus_ac_btn1_h_r.e3ffeec4.png
+    |   |       asus_ac_btn1_h_r.e6de38e1.png
+    |   |       asus_ac_btn1_n_l.132447fb.png
+    |   |       asus_ac_btn1_n_l.6306c1b2.png
+    |   |       asus_ac_btn1_n_l.af6e41fd.png
+    |   |       asus_ac_btn1_n_m.19d1d237.png
+    |   |       asus_ac_btn1_n_m.64cfdcb6.png
+    |   |       asus_ac_btn1_n_m.c3aa34b7.png
+    |   |       asus_ac_btn1_n_r.1272ac54.png
+    |   |       asus_ac_btn1_n_r.17d1e944.png
+    |   |       asus_ac_btn1_n_r.cfd90ffc.png
+    |   |       asus_ac_btn2_d_c_l.0f4263fd.png
+    |   |       asus_ac_btn2_d_c_l.d594d1b0.png
+    |   |       asus_ac_btn2_d_l.55259776.png
+    |   |       asus_ac_btn2_d_l.57706934.png
+    |   |       asus_ac_btn2_d_l.8a2a06e9.png
+    |   |       asus_ac_btn2_d_m.45299c05.png
+    |   |       asus_ac_btn2_d_m.63a6d83a.png
+    |   |       asus_ac_btn2_d_m.a0486267.png
+    |   |       asus_ac_btn2_d_r.246991b3.png
+    |   |       asus_ac_btn2_d_r.b57830db.png
+    |   |       asus_ac_btn2_d_r.fe89d947.png
+    |   |       asus_ac_btn2_h_c_l.4347a2d9.png
+    |   |       asus_ac_btn2_h_c_l.9ac026b5.png
+    |   |       asus_ac_btn2_h_l.e56ea216.png
+    |   |       asus_ac_btn2_h_m.d972e6ae.png
+    |   |       asus_ac_btn2_h_r.0b16dab8.png
+    |   |       asus_ac_btn2_n_l.255a20c0.png
+    |   |       asus_ac_btn2_n_l.55259776.png
+    |   |       asus_ac_btn2_n_l.d65b3f63.png
+    |   |       asus_ac_btn2_n_m.5872ac52.png
+    |   |       asus_ac_btn2_n_m.63a6d83a.png
+    |   |       asus_ac_btn2_n_m.95461a7f.png
+    |   |       asus_ac_btn2_n_r.e2f5b36b.png
+    |   |       asus_ac_btn2_n_r.e9bf1f03.png
+    |   |       asus_ac_btn2_n_r.fe89d947.png
+    |   |       asus_ac_btn2_p_c_l.03934e06.png
+    |   |       asus_ac_btn2_p_c_l.d752a0c0.png
+    |   |       asus_ac_btn2_p_l.55259776.png
+    |   |       asus_ac_btn2_p_l.77db7d0d.png
+    |   |       asus_ac_btn2_p_l.af34f340.png
+    |   |       asus_ac_btn2_p_m.63a6d83a.png
+    |   |       asus_ac_btn2_p_m.7d7eb5d5.png
+    |   |       asus_ac_btn2_p_m.dcfe5bc7.png
+    |   |       asus_ac_btn2_p_r.53f8fc40.png
+    |   |       asus_ac_btn2_p_r.a49d6d42.png
+    |   |       asus_ac_btn2_p_r.c31e2309.png
+    |   |       asus_ac_control_header_d_l.eb12e95e.png
+    |   |       asus_ac_control_header_d_m.17cc0959.png
+    |   |       asus_ac_control_header_d_r.37e351e2.png
+    |   |       asus_ac_control_header_h_l.4462f509.png
+    |   |       asus_ac_control_header_h_l.6d40c1be.png
+    |   |       asus_ac_control_header_h_l.b28f1b22.png
+    |   |       asus_ac_control_header_h_m.31273749.png
+    |   |       asus_ac_control_header_h_m.944cf092.png
+    |   |       asus_ac_control_header_h_m.d758c928.png
+    |   |       asus_ac_control_header_h_r.61d1f509.png
+    |   |       asus_ac_control_header_h_r.e1168189.png
+    |   |       asus_ac_control_header_h_r.f1f10586.png
+    |   |       asus_ac_control_header_list_item_d_r.2e405a8a.png
+    |   |       asus_ac_control_header_list_item_d_r.62f5b833.png
+    |   |       asus_ac_control_header_list_item_d_r.b47af752.png
+    |   |       asus_ac_control_header_list_item_h_r.1ede5e03.png
+    |   |       asus_ac_control_header_list_item_h_r.c24098a1.png
+    |   |       asus_ac_control_header_list_item_h_r.ff129541.png
+    |   |       asus_ac_control_header_list_item_n_r.6401fb87.png
+    |   |       asus_ac_control_header_list_item_n_r.ac745f80.png
+    |   |       asus_ac_control_header_list_item_n_r.cc5ce331.png
+    |   |       asus_ac_control_header_list_item_p_r.526a4e47.png
+    |   |       asus_ac_control_header_list_item_p_r.9769faa4.png
+    |   |       asus_ac_control_header_n_l.da63845c.png
+    |   |       asus_ac_control_header_n_l.faf78f38.png
+    |   |       asus_ac_control_header_n_m.0fe36536.png
+    |   |       asus_ac_control_header_n_m.8fef2743.png
+    |   |       asus_ac_control_header_n_r.0ae14592.png
+    |   |       asus_ac_control_header_n_r.bde6fb96.png
+    |   |       asus_ac_control_header_p_l.6efa2d4f.png
+    |   |       asus_ac_control_header_p_l.90742272.png
+    |   |       asus_ac_control_header_p_l.e344bf36.png
+    |   |       asus_ac_control_header_p_m.4d53ebbe.png
+    |   |       asus_ac_control_header_p_m.aca90720.png
+    |   |       asus_ac_control_header_p_m.ef6bf181.png
+    |   |       asus_ac_control_header_p_r.48c26faa.png
+    |   |       asus_ac_control_header_p_r.60df50c6.png
+    |   |       asus_ac_control_header_p_r.fa53c1bd.png
+    |   |       asus_ac_control_header_text_box_n_l.03e3a762.png
+    |   |       asus_ac_control_header_text_box_n_l.a527a9cc.png
+    |   |       asus_ac_control_header_text_box_n_l.b2a671b2.png
+    |   |       asus_ac_control_header_text_box_n_m.2f60e46d.png
+    |   |       asus_ac_control_header_text_box_n_m.9ecaab17.png
+    |   |       asus_ac_control_header_text_box_n_m.b622a128.png
+    |   |       asus_ac_control_header_text_box_n_r.640b1920.png
+    |   |       asus_ac_control_header_text_box_n_r.af1e54cb.png
+    |   |       asus_ac_control_header_text_box_n_r.ec4d8748.png
+    |   |       asus_ac_control_header_text_box_type_n_l.6c3ea766.png
+    |   |       asus_ac_control_header_text_box_type_n_l.b2a671b2.png
+    |   |       asus_ac_control_header_text_box_type_n_l.f4e10588.png
+    |   |       asus_ac_control_header_text_box_type_n_m.2f60e46d.png
+    |   |       asus_ac_control_header_text_box_type_n_m.dd5ab801.png
+    |   |       asus_ac_control_header_text_box_type_n_m.f38bd0aa.png
+    |   |       asus_ac_control_header_text_box_type_n_r.322594b8.png
+    |   |       asus_ac_control_header_text_box_type_n_r.640b1920.png
+    |   |       asus_ac_control_header_text_box_type_n_r.e4756b27.png
+    |   |       asus_ac_hotkey_4keys_illustration_bg.1103c2a3.png
+    |   |       asus_ac_hotkey_5keys_illustration_bg.80dd669c.png
+    |   |       asus_ac_hotkey_illustration_bg.00c7e0af.png
+    |   |       asus_ac_hotkey_portrait_illustration_bg.21944a4d.png
+    |   |       asus_ac_hotkey_p_4keys_illustration_bg.3974f628.png
+    |   |       asus_ac_indicator_hint_off_h.692a1622.svg
+    |   |       asus_ac_indicator_hint_off_h.a997000b.svg
+    |   |       asus_ac_indicator_hint_off_h.ad6f156f.svg
+    |   |       asus_ac_indicator_hint_off_n.fc91daec.svg
+    |   |       asus_ac_indicator_hint_off_p.522172db.svg
+    |   |       asus_ac_indicator_hint_off_p.8eadfad2.svg
+    |   |       asus_ac_indicator_hint_off_p.fd84c580.svg
+    |   |       asus_ac_indicator_hint_on_h.b730dc59.svg
+    |   |       asus_ac_indicator_hint_on_h.d25146ca.svg
+    |   |       asus_ac_indicator_hint_on_h.e58408ce.svg
+    |   |       asus_ac_indicator_hint_on_n.9fcddedf.svg
+    |   |       asus_ac_indicator_hint_on_p.47e03f22.svg
+    |   |       asus_ac_indicator_hint_on_p.8229f12e.svg
+    |   |       asus_ac_indicator_hint_on_p.89f93ee0.svg
+    |   |       asus_ac_radio_reset_select1_p.0b80abf3.png
+    |   |       asus_ac_radio_reset_select1_p.7855a7c8.png
+    |   |       asus_ac_radio_reset_select1_p.db80e0a3.png
+    |   |       asus_ac_radio_reset_select2_n.3e4ef966.png
+    |   |       asus_ac_radio_reset_select2_n.b4e03dab.png
+    |   |       asus_ac_radio_reset_select2_n.c53e9d27.png
+    |   |       asus_ac_radio_reset_unselect1_d.1fc9cf13.png
+    |   |       asus_ac_radio_reset_unselect1_d.3f214af2.png
+    |   |       asus_ac_radio_reset_unselect1_d.7aeb6570.png
+    |   |       asus_ac_radio_reset_unselect1_n.53821a4a.png
+    |   |       asus_ac_radio_reset_unselect1_n.7f4f971a.png
+    |   |       asus_ac_radio_reset_unselect1_n.df52e0d8.png
+    |   |       asus_ac_radio_reset_unselect2_h.40817295.png
+    |   |       asus_ac_radio_reset_unselect2_h.9be87cea.png
+    |   |       asus_ac_radio_reset_unselect2_h.a007a86b.png
+    |   |       asus_ac_reset_select_d.1646ab5b.png
+    |   |       asus_ac_reset_select_d.6e5c05d2.png
+    |   |       asus_ac_reset_select_d.81ab62c3.png
+    |   |       asus_ac_reset_select_n.4f3933e5.png
+    |   |       asus_ac_reset_select_n.81ab62c3.png
+    |   |       asus_ac_reset_select_n.db2d4340.png
+    |   |       asus_ac_reset_select_p.c9e8abe6.png
+    |   |       asus_ac_reset_select_p.ce0e00a1.png
+    |   |       asus_ac_reset_select_p.d83fb475.png
+    |   |       asus_ac_reset_unselect_d.05e39c3f.png
+    |   |       asus_ac_reset_unselect_d.1911e418.png
+    |   |       asus_ac_reset_unselect_d.f43131af.png
+    |   |       asus_ac_reset_unselect_n.74ad23f0.png
+    |   |       asus_ac_reset_unselect_n.805a6b39.png
+    |   |       asus_ac_reset_unselect_n.f43131af.png
+    |   |       asus_ac_reset_unselect_p.1c1c658a.png
+    |   |       asus_ac_reset_unselect_p.cdef9c1f.png
+    |   |       asus_ac_reset_unselect_p.f4de3330.png
+    |   |       asus_ac_sbtn_l_dis.c0b983aa.png
+    |   |       asus_ac_sbtn_l_dis.dc213d97.png
+    |   |       asus_ac_sbtn_l_dis.fded4b09.png
+    |   |       asus_ac_sbtn_l_hover.1c6243da.png
+    |   |       asus_ac_sbtn_l_hover.2b760772.png
+    |   |       asus_ac_sbtn_l_hover.32fa5790.png
+    |   |       asus_ac_sbtn_l_n.0a816555.png
+    |   |       asus_ac_sbtn_l_n.1b381996.png
+    |   |       asus_ac_sbtn_l_n.278f399f.png
+    |   |       asus_ac_sbtn_l_p.1c1ede61.png
+    |   |       asus_ac_sbtn_l_p.ed50f28f.png
+    |   |       asus_ac_sbtn_l_p.f27e5e6a.png
+    |   |       asus_ac_sbtn_mid_dis.20dfde6b.png
+    |   |       asus_ac_sbtn_mid_dis.984cd85f.png
+    |   |       asus_ac_sbtn_mid_hover.4760accd.png
+    |   |       asus_ac_sbtn_mid_hover.4a594d8c.png
+    |   |       asus_ac_sbtn_mid_hover.4d027d25.png
+    |   |       asus_ac_sbtn_mid_n.02ca9067.png
+    |   |       asus_ac_sbtn_mid_n.526fa5dd.png
+    |   |       asus_ac_sbtn_mid_n.fe45ffab.png
+    |   |       asus_ac_sbtn_mid_p.e0384cb1.png
+    |   |       asus_ac_sbtn_mid_p.e26f40a0.png
+    |   |       asus_ac_sbtn_mid_p.fc358a83.png
+    |   |       asus_ac_sbtn_r_dis.92e82c09.png
+    |   |       asus_ac_sbtn_r_dis.e3051c55.png
+    |   |       asus_ac_sbtn_r_dis.ecc5891d.png
+    |   |       asus_ac_sbtn_r_hover.3ab3e548.png
+    |   |       asus_ac_sbtn_r_hover.ad43874d.png
+    |   |       asus_ac_sbtn_r_hover.ae0d92b3.png
+    |   |       asus_ac_sbtn_r_n.1efb6b45.png
+    |   |       asus_ac_sbtn_r_n.688718a7.png
+    |   |       asus_ac_sbtn_r_n.c026c74c.png
+    |   |       asus_ac_sbtn_r_p.c06eb58e.png
+    |   |       asus_ac_sbtn_r_p.c72e433c.png
+    |   |       asus_ac_sbtn_r_p.db4603c8.png
+    |   |       asus_ac_slider_n.31b21505.png
+    |   |       asus_ac_slider_n.a0ec0077.png
+    |   |       asus_ac_slider_n.cd5df7b1.png
+    |   |       asus_ac_slider_p.0daa22e6.png
+    |   |       asus_ac_slider_p.5f9683fb.png
+    |   |       asus_ac_slider_p.dad89ac9.png
+    |   |       asus_ac_tab_select.0a30f884.png
+    |   |       asus_ac_tab_select.a9f6ae82.png
+    |   |       asus_ac_tab_select.d8edf254.png
+    |   |       asus_ac_toggle_reset_select_bg_h.0c8940d0.png
+    |   |       asus_ac_toggle_reset_select_bg_h.28fde71b.png
+    |   |       asus_ac_toggle_reset_select_bg_h.5f9e65cf.png
+    |   |       asus_ac_toggle_reset_select_bg_n.57bb8e10.png
+    |   |       asus_ac_toggle_reset_select_bg_n.a12d62bf.png
+    |   |       asus_ac_toggle_reset_select_bg_n.d4bdb07a.png
+    |   |       asus_ac_toggle_reset_unselect_bg_h.0f2c29dd.png
+    |   |       asus_ac_toggle_reset_unselect_bg_h.d3970230.png
+    |   |       asus_ac_toggle_reset_unselect_bg_h.f973282f.png
+    |   |       asus_ac_toggle_reset_unselect_bg_n.09fba6e7.png
+    |   |       asus_ac_toggle_reset_unselect_bg_n.7a83544d.png
+    |   |       asus_ac_toggle_reset_unselect_bg_n.e7eb19bf.png
+    |   |       asus_basic_btn_d_l.6cefebfa.png
+    |   |       asus_basic_btn_d_m.56b74c41.png
+    |   |       asus_basic_btn_d_r.cc7864c7.png
+    |   |       asus_basic_btn_h_l.1f265098.png
+    |   |       asus_basic_btn_h_l.2389f364.png
+    |   |       asus_basic_btn_h_l.387fd371.png
+    |   |       asus_basic_btn_h_m.0254c315.png
+    |   |       asus_basic_btn_h_m.9413e4e8.png
+    |   |       asus_basic_btn_h_m.e60f67d8.png
+    |   |       asus_basic_btn_h_r.2eb40226.png
+    |   |       asus_basic_btn_h_r.7752d2d3.png
+    |   |       asus_basic_btn_h_r.ccf64036.png
+    |   |       asus_basic_btn_n_l.ed36c91b.png
+    |   |       asus_basic_btn_n_m.d6432d97.png
+    |   |       asus_basic_btn_n_r.eeab80a8.png
+    |   |       asus_basic_btn_p_l.07c7a4e5.png
+    |   |       asus_basic_btn_p_l.3379da81.png
+    |   |       asus_basic_btn_p_l.7469fabb.png
+    |   |       asus_basic_btn_p_m.cdf2a452.png
+    |   |       asus_basic_btn_p_m.dff5cc1e.png
+    |   |       asus_basic_btn_p_m.eebe8291.png
+    |   |       asus_basic_btn_p_r.044c0202.png
+    |   |       asus_basic_btn_p_r.08d7ad25.png
+    |   |       asus_basic_btn_p_r.ae80159e.png
+    |   |       asus_gc_appbar_arrow_hover_l.7f99d469.png
+    |   |       asus_gc_appbar_arrow_hover_l.d60c48dd.png
+    |   |       asus_gc_appbar_arrow_hover_l.ec3ce47d.png
+    |   |       asus_gc_appbar_arrow_hover_r.85cb15cb.png
+    |   |       asus_gc_appbar_arrow_hover_r.b16ba4d6.png
+    |   |       asus_gc_appbar_arrow_hover_r.b8cbe1d5.png
+    |   |       asus_gc_appbar_arrow_n_l.0e8474f2.png
+    |   |       asus_gc_appbar_arrow_n_l.12e481d4.png
+    |   |       asus_gc_appbar_arrow_n_l.47986a0c.png
+    |   |       asus_gc_appbar_arrow_n_r.6853ee76.png
+    |   |       asus_gc_appbar_arrow_n_r.c8e045b5.png
+    |   |       asus_gc_appbar_arrow_n_r.d1dfcc75.png
+    |   |       asus_gc_appbar_arrow_p_l.0c6e0fe0.png
+    |   |       asus_gc_appbar_arrow_p_l.88183ce6.png
+    |   |       asus_gc_appbar_arrow_p_l.970518d5.png
+    |   |       asus_gc_appbar_arrow_p_r.3d65a26a.png
+    |   |       asus_gc_appbar_arrow_p_r.bef4cf00.png
+    |   |       asus_gc_appbar_arrow_p_r.c77982f0.png
+    |   |       asus_gc_aura_addcustom_btn_h.db0f2c96.png
+    |   |       asus_gc_aura_addcustom_btn_h.de2d9bf1.png
+    |   |       asus_gc_aura_addcustom_btn_n.f1ed3283.png
+    |   |       asus_gc_aura_addcustom_btn_n.fe4926ae.png
+    |   |       asus_gc_aura_addcustom_btn_p.028a7c48.png
+    |   |       asus_gc_aura_addcustom_btn_p.22cefb4a.png
+    |   |       asus_gc_aura_customize_colorpick_delete_btn.1bb0cca8.png
+    |   |       asus_gc_aura_customize_colorpick_h_btn.26b32f40.png
+    |   |       asus_gc_aura_customize_colorpick_h_btn.4f302000.png
+    |   |       asus_gc_aura_customize_colorpick_n_btn.3efc20a8.png
+    |   |       asus_gc_aura_customize_colorpick_selected_btn.86a297a0.png
+    |   |       asus_gc_aura_customize_colorpick_selected_btn.cf79d6ec.png
+    |   |       asus_gc_aura_customize_colorpick_selected_colorpicker_bg.21c142f3.png
+    |   |       asus_gc_aura_customize_colorpick_selected_colorpicker_bg.687cc228.png
+    |   |       asus_gc_aura_customize_colorpick_s_btn.5024993d.png
+    |   |       asus_gc_aura_customize_colorpick_s_btn.e503127e.png
+    |   |       asus_gc_aura_customize_color_btn_h.588c946b.png
+    |   |       asus_gc_aura_customize_color_btn_h.bdbf82e5.png
+    |   |       asus_gc_aura_customize_color_btn_h.ddd5974d.png
+    |   |       asus_gc_aura_customize_color_btn_n.a5d5f1fa.png
+    |   |       asus_gc_aura_customize_color_btn_n.c99c49eb.png
+    |   |       asus_gc_aura_customize_color_btn_n.dc9d8285.png
+    |   |       asus_gc_aura_direction_anticlockwise_n.ca92f0b4.png
+    |   |       asus_gc_aura_direction_anticlockwise_n.df1ddf66.png
+    |   |       asus_gc_aura_direction_anticlockwise_s.17f39a55.png
+    |   |       asus_gc_aura_direction_anticlockwise_s.32118095.png
+    |   |       asus_gc_aura_direction_clockwise_n.05f3b456.png
+    |   |       asus_gc_aura_direction_clockwise_n.511941ad.png
+    |   |       asus_gc_aura_direction_clockwise_s.41261ba9.png
+    |   |       asus_gc_aura_direction_clockwise_s.cddbea3a.png
+    |   |       asus_gc_aura_direction_r_two_n.2057d8f1.png
+    |   |       asus_gc_aura_direction_r_two_n.abe16639.png
+    |   |       asus_gc_aura_direction_r_two_s.a9a4bc42.png
+    |   |       asus_gc_aura_direction_r_two_s.d1fff0b9.png
+    |   |       asus_gc_aura_direction_u_n.30c0ff93.png
+    |   |       asus_gc_aura_direction_u_n.9a28785e.png
+    |   |       asus_gc_aura_direction_u_s.68401d20.png
+    |   |       asus_gc_aura_direction_u_s.8b52ddd9.png
+    |   |       asus_gc_aura_updates_bg.0d505b22.png
+    |   |       asus_gc_aura_updates_bg.6141ddaf.png
+    |   |       asus_gc_aura_updates_bg.928e951f.png
+    |   |       asus_gc_dailog_bg_l1.39608495.png
+    |   |       asus_gc_dailog_bg_l2.30f2b411.png
+    |   |       asus_gc_dailog_bg_l3.5e980272.png
+    |   |       asus_gc_dailog_bg_long.14c51de8.png
+    |   |       asus_gc_dailog_bg_long.e9f4e1b8.png
+    |   |       asus_gc_dailog_bg_m1.40f24321.png
+    |   |       asus_gc_dailog_bg_m2.624d99fa.png
+    |   |       asus_gc_dailog_bg_m3.0d8fc639.png
+    |   |       asus_gc_dailog_bg_r1.850c0735.png
+    |   |       asus_gc_dailog_bg_r2.64f92044.png
+    |   |       asus_gc_dailog_bg_r3.7f8f1d16.png
+    |   |       asus_gc_error_ic.2e016779.png
+    |   |       asus_gc_error_ic.65eb451c.png
+    |   |       asus_gc_error_ic.6b661c47.png
+    |   |       asus_gc_ios_tabbar_system_ic_rog.0f7469e9.png
+    |   |       asus_gc_main_bg.bf8d0b25.png
+    |   |       asus_gc_main_bg.ca3adca3.png
+    |   |       asus_gc_main_bg.ebc58f05.png
+    |   |       asus_gc_new_big_ic.db5574e5.png
+    |   |       asus_gc_new_big_ic.f682eda0.png
+    |   |       asus_gc_scrollbar_hint_portrait_n_l.72d27610.png
+    |   |       asus_gc_scrollbar_hint_portrait_n_l.91438e4b.png
+    |   |       asus_gc_scrollbar_hint_portrait_n_l.e3617951.png
+    |   |       asus_gc_scrollbar_hint_portrait_n_mid.450a00a3.png
+    |   |       asus_gc_scrollbar_hint_portrait_n_mid.548aab65.png
+    |   |       asus_gc_scrollbar_hint_portrait_n_mid.d3401a08.png
+    |   |       asus_gc_scrollbar_hint_portrait_n_r.09179852.png
+    |   |       asus_gc_scrollbar_hint_portrait_n_r.1974b7ef.png
+    |   |       asus_gc_scrollbar_hint_portrait_n_r.1dca46cf.png
+    |   |       asus_gc_scrollbar_hint_portrait_p_l.325f5bfd.png
+    |   |       asus_gc_scrollbar_hint_portrait_p_l.df439245.png
+    |   |       asus_gc_scrollbar_hint_portrait_p_l.faa691c9.png
+    |   |       asus_gc_scrollbar_hint_portrait_p_mid.261cb510.png
+    |   |       asus_gc_scrollbar_hint_portrait_p_mid.3360fdeb.png
+    |   |       asus_gc_scrollbar_hint_portrait_p_mid.548aab65.png
+    |   |       asus_gc_scrollbar_hint_portrait_p_r.1974b7ef.png
+    |   |       asus_gc_scrollbar_hint_portrait_p_r.3bbeb814.png
+    |   |       asus_gc_scrollbar_hint_portrait_p_r.f9ace93b.png
+    |   |       asus_gc_system_file_ic_n.33a74081.png
+    |   |       asus_gc_system_file_ic_n.97c692d2.png
+    |   |       asus_gc_system_scrollbar_h.8f32d441.svg
+    |   |       asus_gc_system_scrollbar_h.cabf12f2.svg
+    |   |       asus_gc_system_scrollbar_h.f82ba85e.svg
+    |   |       asus_gc_system_scrollbar_n.85805309.svg
+    |   |       asus_gc_system_scrollbar_n.cd6fdfa7.svg
+    |   |       asus_gc_system_scrollbar_n.f2ba857a.svg
+    |   |       asus_gc_system_scrollbar_p.529619cd.svg
+    |   |       asus_gc_system_scrollbar_p.84fcbdb6.svg
+    |   |       asus_gc_system_scrollbar_p.a01a59ca.svg
+    |   |       asus_gc_toggle_reset_select_icn_h.0d5cfd0e.png
+    |   |       asus_gc_toggle_reset_select_icn_h.412f9c82.png
+    |   |       asus_gc_toggle_reset_select_icn_h.fd29d07c.png
+    |   |       asus_gc_toggle_reset_select_icn_n.759e4123.png
+    |   |       asus_gc_toggle_reset_select_icn_n.8e2328aa.png
+    |   |       asus_gc_toggle_reset_select_icn_n.fd29d07c.png
+    |   |       asus_gc_toggle_reset_unselect_icn_n.280f7e04.png
+    |   |       asus_gc_toggle_reset_unselect_icn_n.38ebedda.png
+    |   |       asus_gc_toggle_reset_unselect_icn_n.cb0b2042.png
+    |   |       asus_small_btn_d_l.976782aa.png
+    |   |       asus_small_btn_d_m.29028b1e.png
+    |   |       asus_small_btn_d_m.a445d9f4.png
+    |   |       asus_small_btn_d_r.f64199ec.png
+    |   |       asus_small_btn_h_l.092907e5.png
+    |   |       asus_small_btn_h_l.80663a54.png
+    |   |       asus_small_btn_h_l.bb95e178.png
+    |   |       asus_small_btn_h_m.045bd602.png
+    |   |       asus_small_btn_h_m.1c17bf7e.png
+    |   |       asus_small_btn_h_m.2c67acb9.png
+    |   |       asus_small_btn_h_r.7094c8bc.png
+    |   |       asus_small_btn_h_r.a8eca2af.png
+    |   |       asus_small_btn_h_r.fc8c6035.png
+    |   |       asus_small_btn_n_l.74bb9862.png
+    |   |       asus_small_btn_n_l.a3526946.png
+    |   |       asus_small_btn_n_l.aeca01a9.png
+    |   |       asus_small_btn_n_m.131012a2.png
+    |   |       asus_small_btn_n_m.4416f7f5.png
+    |   |       asus_small_btn_n_m.e25b6793.png
+    |   |       asus_small_btn_n_r.85981c42.png
+    |   |       asus_small_btn_n_r.9705ca66.png
+    |   |       asus_small_btn_n_r.fb973eb2.png
+    |   |       asus_small_btn_p_l.462116b5.png
+    |   |       asus_small_btn_p_l.9abd66e7.png
+    |   |       asus_small_btn_p_l.a7d3b6c6.png
+    |   |       asus_small_btn_p_m.696835be.png
+    |   |       asus_small_btn_p_m.90c65ef4.png
+    |   |       asus_small_btn_p_m.eeee7703.png
+    |   |       asus_small_btn_p_r.1cf04417.png
+    |   |       asus_small_btn_p_r.28e17ff6.png
+    |   |       asus_small_btn_p_r.a129b06e.png
+    |   |       btn_decrease_h_p.95875dee.png
+    |   |       btn_decrease_h_p.e028c595.png
+    |   |       btn_decrease_n.21fc082b.png
+    |   |       btn_h_p.556ca34f.png
+    |   |       btn_h_p.792c8cd8.png
+    |   |       btn_increase_h_p.daf06d4d.png
+    |   |       btn_increase_h_p.e2201e57.png
+    |   |       btn_increase_n.588ec647.png
+    |   |       btn_morefunction_h.97f747eb.png
+    |   |       btn_morefunction_h.fad2b4f0.png
+    |   |       btn_morefunction_n.3794dccb.png
+    |   |       btn_morefunction_p.08b465d9.png
+    |   |       btn_morefunction_p.712aa173.png
+    |   |       btn_n.8ec9edb9.png
+    |   |       colorpicker_arrow.791e9398.png
+    |   |       colorpicker_circle.c3b19fb0.png
+    |   |       icn_defaultprofile.48cd303d.png
+    |   |       icn_defaultprofile.79a669a5.png
+    |   |       ic_charging.f13dac6b.png
+    |   |       ic_full.c4923ca2.png
+    |   |       ic_lowbattery.646224d0.png
+    |   |       Left.7ee4b553.png
+    |   |       Line.24b9412c.png
+    |   |       loading.24adde72.gif
+    |   |       loading.7d98da81.gif
+    |   |       loading.ad7635da.gif
+    |   |       Mid.178e02a0.png
+    |   |       Patten_control_d_n.61ee02ac.png
+    |   |       Patten_control_d_s.b136d69f.png
+    |   |       Patten_control_n.a0c8209d.png
+    |   |       Patten_control_s.9355c46c.png
+    |   |       red_point.b92dc3f6.png
+    |   |       red_point.c02dbe63.png
+    |   |       Right.6cfc9b4d.png
+    |   |       scrollbar-bg-type2.ec82f06e.png
+    |   |       to-word.1c72a137.png
+    |   |       
+    |   \---js
+    |           app.dda5440b.js
+    |           app.dda5440b.js.map
+    |           chunk-vendors.7db6412e.js
+    |           chunk-vendors.7db6412e.js.map
+    |           
+    +---AC_DenoiseAI
+    |   |   favicon.ico
+    |   |   index.html
+    |   |   MD5.ini
+    |   |   
+    |   +---css
+    |   |       app.2d71c6ca.css
+    |   |       chunk-vendors.3856fbc8.css
+    |   |       
+    |   +---img
+    |   |       asus_ac_as_cardioid.379b1ec9.png
+    |   |       asus_ac_as_cardioid.c6072123.png
+    |   |       asus_ac_as_cardioid.e85926fd.png
+    |   |       asus_ac_as_dialog_hint.c8fb5c12.png
+    |   |       asus_ac_as_illustration.9dbacffa.png
+    |   |       asus_ac_as_illustration.ba17e476.png
+    |   |       asus_ac_as_illustration.d637d37a.png
+    |   |       asus_ac_as_microphone.11b2e8a5.png
+    |   |       asus_ac_as_microphone.18dacab5.png
+    |   |       asus_ac_as_microphone.ae9f70a9.png
+    |   |       asus_ac_as_multi presenter.4523b3bf.png
+    |   |       asus_ac_as_multi presenter.7ac54ab7.png
+    |   |       asus_ac_as_multi presenter.92388ab4.png
+    |   |       asus_ac_as_omni.a23c2784.png
+    |   |       asus_ac_as_omni.c352ef03.png
+    |   |       asus_ac_as_omni.f29e4baa.png
+    |   |       asus_ac_as_single presenter.0b1cb5f5.png
+    |   |       asus_ac_as_single presenter.7d114add.png
+    |   |       asus_ac_as_single presenter.a55463e4.png
+    |   |       asus_ac_as_speaker.8064e82e.png
+    |   |       asus_ac_as_speaker.9025c3a1.png
+    |   |       asus_ac_as_speaker.ff5ad44e.png
+    |   |       asus_ac_as_stereo.3e63b32f.png
+    |   |       asus_ac_as_stereo.b05a7a77.png
+    |   |       asus_ac_as_stereo.d065bf93.png
+    |   |       asus_ac_as_tooltips_input.51e18a21.png
+    |   |       asus_ac_as_tooltips_output.0c542236.png
+    |   |       asus_ac_checkbox_d.1569fb23.svg
+    |   |       asus_ac_checkbox_n.49456cd4.svg
+    |   |       asus_ac_checkbox_off_d.06f95a61.svg
+    |   |       asus_ac_checkbox_off_d.1e8694af.svg
+    |   |       asus_ac_checkbox_off_d.8c35c4d7.svg
+    |   |       asus_ac_checkbox_off_h.0555b143.svg
+    |   |       asus_ac_checkbox_off_h.8d0f2a43.svg
+    |   |       asus_ac_checkbox_off_h.950167be.svg
+    |   |       asus_ac_checkbox_off_n.9651d4b9.svg
+    |   |       asus_ac_checkbox_off_p.46263f4c.svg
+    |   |       asus_ac_checkbox_off_p.b4d105b7.svg
+    |   |       asus_ac_checkbox_off_p.df16b4ae.svg
+    |   |       asus_ac_checkbox_on_d.7aa4ac8c.svg
+    |   |       asus_ac_checkbox_on_h.2a2d2c62.svg
+    |   |       asus_ac_checkbox_on_h.f1731ec7.svg
+    |   |       asus_ac_checkbox_on_h.fa282c66.svg
+    |   |       asus_ac_checkbox_on_n.9ebe1a24.svg
+    |   |       asus_ac_checkbox_on_p.139ce54b.svg
+    |   |       asus_ac_checkbox_on_p.26cd02e8.svg
+    |   |       asus_ac_checkbox_on_p.8c5bafa0.svg
+    |   |       asus_ac_control_header_d_l.eb12e95e.png
+    |   |       asus_ac_control_header_d_m.17cc0959.png
+    |   |       asus_ac_control_header_d_r.37e351e2.png
+    |   |       asus_ac_control_header_h_l.096b3976.png
+    |   |       asus_ac_control_header_h_l.4462f509.png
+    |   |       asus_ac_control_header_h_l.6d40c1be.png
+    |   |       asus_ac_control_header_h_l.b28f1b22.png
+    |   |       asus_ac_control_header_h_l.c4b9a14a.png
+    |   |       asus_ac_control_header_h_l.d1106ece.png
+    |   |       asus_ac_control_header_h_m.31273749.png
+    |   |       asus_ac_control_header_h_m.944cf092.png
+    |   |       asus_ac_control_header_h_m.ab44d06c.png
+    |   |       asus_ac_control_header_h_m.cef61b6d.png
+    |   |       asus_ac_control_header_h_m.d758c928.png
+    |   |       asus_ac_control_header_h_m.f99d3a94.png
+    |   |       asus_ac_control_header_h_r.0a117d58.png
+    |   |       asus_ac_control_header_h_r.61d1f509.png
+    |   |       asus_ac_control_header_h_r.6be83ff6.png
+    |   |       asus_ac_control_header_h_r.78fa034b.png
+    |   |       asus_ac_control_header_h_r.e1168189.png
+    |   |       asus_ac_control_header_h_r.f1f10586.png
+    |   |       asus_ac_control_header_list_item_h_r.1ede5e03.png
+    |   |       asus_ac_control_header_list_item_h_r.c24098a1.png
+    |   |       asus_ac_control_header_list_item_h_r.ff129541.png
+    |   |       asus_ac_control_header_list_item_n_r.6401fb87.png
+    |   |       asus_ac_control_header_list_item_n_r.ac745f80.png
+    |   |       asus_ac_control_header_list_item_n_r.cc5ce331.png
+    |   |       asus_ac_control_header_list_item_p_r.526a4e47.png
+    |   |       asus_ac_control_header_list_item_p_r.9769faa4.png
+    |   |       asus_ac_control_header_n_l.03e3a762.png
+    |   |       asus_ac_control_header_n_l.7b07d877.png
+    |   |       asus_ac_control_header_n_l.b2a671b2.png
+    |   |       asus_ac_control_header_n_l.da63845c.png
+    |   |       asus_ac_control_header_n_l.faf78f38.png
+    |   |       asus_ac_control_header_n_m.0fe36536.png
+    |   |       asus_ac_control_header_n_m.2f60e46d.png
+    |   |       asus_ac_control_header_n_m.6e3e5b97.png
+    |   |       asus_ac_control_header_n_m.8fef2743.png
+    |   |       asus_ac_control_header_n_m.9ecaab17.png
+    |   |       asus_ac_control_header_n_r.0ae14592.png
+    |   |       asus_ac_control_header_n_r.0fb5d054.png
+    |   |       asus_ac_control_header_n_r.640b1920.png
+    |   |       asus_ac_control_header_n_r.af1e54cb.png
+    |   |       asus_ac_control_header_n_r.bde6fb96.png
+    |   |       asus_ac_control_header_p_l.34cdb48f.png
+    |   |       asus_ac_control_header_p_l.5feb0cbc.png
+    |   |       asus_ac_control_header_p_l.6efa2d4f.png
+    |   |       asus_ac_control_header_p_l.90742272.png
+    |   |       asus_ac_control_header_p_l.cdd056a3.png
+    |   |       asus_ac_control_header_p_l.e344bf36.png
+    |   |       asus_ac_control_header_p_m.2a7526e3.png
+    |   |       asus_ac_control_header_p_m.4d53ebbe.png
+    |   |       asus_ac_control_header_p_m.56f76c54.png
+    |   |       asus_ac_control_header_p_m.786fa7eb.png
+    |   |       asus_ac_control_header_p_m.aca90720.png
+    |   |       asus_ac_control_header_p_m.ef6bf181.png
+    |   |       asus_ac_control_header_p_r.48c26faa.png
+    |   |       asus_ac_control_header_p_r.60df50c6.png
+    |   |       asus_ac_control_header_p_r.cb5d40ec.png
+    |   |       asus_ac_control_header_p_r.d187a601.png
+    |   |       asus_ac_control_header_p_r.fa53c1bd.png
+    |   |       asus_ac_control_header_p_r.ffa1e58a.png
+    |   |       asus_ac_hint_ic_h.8a0e6e50.svg
+    |   |       asus_ac_hint_ic_h.e600ab00.svg
+    |   |       asus_ac_hint_ic_h.fc12ed3b.svg
+    |   |       asus_ac_hint_ic_n.15824a41.svg
+    |   |       asus_ac_hint_ic_n.31848b5f.svg
+    |   |       asus_ac_hint_ic_n.87559504.svg
+    |   |       asus_ac_hint_ic_p.7501e192.svg
+    |   |       asus_ac_hint_ic_p.cfbd0caf.svg
+    |   |       asus_ac_hint_ic_p.e409a59b.svg
+    |   |       asus_ac_radio_hint_d.f4daf066.svg
+    |   |       asus_ac_radio_hint_n.1e78e947.svg
+    |   |       asus_ac_radio_off_d.651fe12d.svg
+    |   |       asus_ac_radio_off_d.c4ff03fc.svg
+    |   |       asus_ac_radio_off_d.d5b0d1a3.svg
+    |   |       asus_ac_radio_off_h.39b3d1d9.svg
+    |   |       asus_ac_radio_off_h.71a47711.svg
+    |   |       asus_ac_radio_off_h.f354245a.svg
+    |   |       asus_ac_radio_off_n.b94b2da2.svg
+    |   |       asus_ac_radio_off_p.96a94e59.svg
+    |   |       asus_ac_radio_off_p.bbaf67fd.svg
+    |   |       asus_ac_radio_off_p.bcaaabc3.svg
+    |   |       asus_ac_radio_on_d.a65c28d0.svg
+    |   |       asus_ac_radio_on_h.74cdc319.svg
+    |   |       asus_ac_radio_on_h.be11fd50.svg
+    |   |       asus_ac_radio_on_h.beec7c5f.svg
+    |   |       asus_ac_radio_on_n.cb791c53.svg
+    |   |       asus_ac_radio_on_p.12f42a71.svg
+    |   |       asus_ac_radio_on_p.241d0a2b.svg
+    |   |       asus_ac_radio_on_p.b008d9ae.svg
+    |   |       asus_ac_toggles_hint_off_n.e28abc8a.svg
+    |   |       asus_ac_toggles_hint_on_n.7c579aa9.svg
+    |   |       asus_ac_toggles_off_h.306ddb73.svg
+    |   |       asus_ac_toggles_off_h.555bb893.svg
+    |   |       asus_ac_toggles_off_h.8282bd87.svg
+    |   |       asus_ac_toggles_off_n.ddb1bff6.svg
+    |   |       asus_ac_toggles_off_p.6faf5712.svg
+    |   |       asus_ac_toggles_off_p.d61707c1.svg
+    |   |       asus_ac_toggles_off_p.deed639d.svg
+    |   |       asus_ac_toggles_on_h.400f7f1d.svg
+    |   |       asus_ac_toggles_on_h.ac1aaf46.svg
+    |   |       asus_ac_toggles_on_h.f6668c61.svg
+    |   |       asus_ac_toggles_on_n.23bad9fe.svg
+    |   |       asus_ac_toggles_on_p.512446fc.svg
+    |   |       asus_ac_toggles_on_p.d62eee22.svg
+    |   |       asus_ac_toggles_on_p.f043bb0b.svg
+    |   |       asus_basic_btn_d_l.6cefebfa.png
+    |   |       asus_basic_btn_d_m.56b74c41.png
+    |   |       asus_basic_btn_d_r.cc7864c7.png
+    |   |       asus_basic_btn_h_l.1f265098.png
+    |   |       asus_basic_btn_h_l.2389f364.png
+    |   |       asus_basic_btn_h_l.387fd371.png
+    |   |       asus_basic_btn_h_m.0254c315.png
+    |   |       asus_basic_btn_h_m.9413e4e8.png
+    |   |       asus_basic_btn_h_m.e60f67d8.png
+    |   |       asus_basic_btn_h_r.2eb40226.png
+    |   |       asus_basic_btn_h_r.7752d2d3.png
+    |   |       asus_basic_btn_h_r.ccf64036.png
+    |   |       asus_basic_btn_n_l.ed36c91b.png
+    |   |       asus_basic_btn_n_m.d6432d97.png
+    |   |       asus_basic_btn_n_r.eeab80a8.png
+    |   |       asus_basic_btn_p_l.07c7a4e5.png
+    |   |       asus_basic_btn_p_l.3379da81.png
+    |   |       asus_basic_btn_p_l.7469fabb.png
+    |   |       asus_basic_btn_p_m.cdf2a452.png
+    |   |       asus_basic_btn_p_m.dff5cc1e.png
+    |   |       asus_basic_btn_p_m.eebe8291.png
+    |   |       asus_basic_btn_p_r.044c0202.png
+    |   |       asus_basic_btn_p_r.08d7ad25.png
+    |   |       asus_basic_btn_p_r.ae80159e.png
+    |   |       asus_cac_slider_handle_pointed_h.40e7ada0.png
+    |   |       asus_cac_slider_handle_pointed_h.f8c96232.png
+    |   |       asus_cac_slider_handle_pointed_h_f.1c98dcb1.png
+    |   |       asus_cac_slider_handle_pointed_h_f.28d10088.png
+    |   |       asus_cac_slider_handle_pointed_n.61d906d2.png
+    |   |       asus_cac_slider_handle_pointed_n.c7e18a54.png
+    |   |       asus_cac_slider_handle_pointed_n_f.2d378505.png
+    |   |       asus_cac_slider_handle_pointed_n_f.575248d0.png
+    |   |       asus_cac_slider_handle_pointed_s_f.b7730959.png
+    |   |       asus_cac_slider_handle_pointed_s_f.e097ccbe.png
+    |   |       asus_gc_dailog_bg_l1.ae5aa12d.png
+    |   |       asus_gc_dailog_bg_l1_d.39608495.png
+    |   |       asus_gc_dailog_bg_l2.30f2b411.png
+    |   |       asus_gc_dailog_bg_l3.5e980272.png
+    |   |       asus_gc_dailog_bg_m1.40f24321.png
+    |   |       asus_gc_dailog_bg_m3.0d8fc639.png
+    |   |       asus_gc_dailog_bg_r1.850c0735.png
+    |   |       asus_gc_dailog_bg_r2.64f92044.png
+    |   |       asus_gc_dailog_bg_r3.7f8f1d16.png
+    |   |       asus_gc_matrix_speedslider_hint_n.3cb08e3b.png
+    |   |       asus_gc_system_scrollbar_h.a7ed4e2d.png
+    |   |       asus_gc_system_scrollbar_land_h.3386e6a8.svg
+    |   |       asus_gc_system_scrollbar_land_h.a569141c.svg
+    |   |       asus_gc_system_scrollbar_land_h.af5c808d.svg
+    |   |       asus_gc_system_scrollbar_land_n.15ae111d.svg
+    |   |       asus_gc_system_scrollbar_land_n.83a679cc.svg
+    |   |       asus_gc_system_scrollbar_land_n.f4bd2eac.svg
+    |   |       asus_gc_system_scrollbar_land_p.06e12501.svg
+    |   |       asus_gc_system_scrollbar_land_p.35da32e4.svg
+    |   |       asus_gc_system_scrollbar_land_p.a40873be.svg
+    |   |       asus_gc_system_scrollbar_n.634a08ae.png
+    |   |       asus_gc_system_scrollbar_p.49a2fd58.png
+    |   |       asus_sw_demo_high_h.2a562c22.svg
+    |   |       asus_sw_demo_high_h.8e7ef0a2.svg
+    |   |       asus_sw_demo_high_h.b7d6612e.svg
+    |   |       asus_sw_demo_high_n.68110f59.svg
+    |   |       asus_sw_demo_high_n.ee38619a.svg
+    |   |       asus_sw_demo_high_p.0dc221a2.svg
+    |   |       asus_sw_demo_high_p.3d715058.svg
+    |   |       asus_sw_demo_high_p.abd3ee37.svg
+    |   |       asus_sw_demo_off_h.1491e9ff.svg
+    |   |       asus_sw_demo_off_h.b6b8f7c3.svg
+    |   |       asus_sw_demo_off_h.fbe98aee.svg
+    |   |       asus_sw_demo_off_n.7c4157a2.svg
+    |   |       asus_sw_demo_off_n.c33091e2.svg
+    |   |       asus_sw_demo_off_p.2c193dc2.svg
+    |   |       asus_sw_demo_off_p.4dfd1b7f.svg
+    |   |       asus_sw_demo_off_p.b14ddb6f.svg
+    |   |       asus_sw_dropdown_d.6cd8e7a9.svg
+    |   |       asus_sw_dropdown_h.438911dc.svg
+    |   |       asus_sw_dropdown_h.d1a7cd9f.svg
+    |   |       asus_sw_dropdown_h.df04026b.svg
+    |   |       asus_sw_dropdown_n.0e4c401e.svg
+    |   |       asus_sw_dropdown_n.18750bfa.svg
+    |   |       asus_sw_dropdown_p.61c5bb8a.svg
+    |   |       asus_sw_dropdown_p.6bcab6f8.svg
+    |   |       asus_sw_dropdown_p.b1e81464.svg
+    |   |       asus_sw_microphone_h.5a393e5a.svg
+    |   |       asus_sw_microphone_h.96c2e889.svg
+    |   |       asus_sw_microphone_h.c786cccc.svg
+    |   |       asus_sw_microphone_n.477c379f.svg
+    |   |       asus_sw_microphone_n.536b6795.svg
+    |   |       asus_sw_microphone_p.45e701c2.svg
+    |   |       asus_sw_microphone_p.8467b4d6.svg
+    |   |       asus_sw_microphone_p.a22ba9e9.svg
+    |   |       asus_sw_play_h.1ba4f192.svg
+    |   |       asus_sw_play_h.553e8ddb.svg
+    |   |       asus_sw_play_h.65359c2d.svg
+    |   |       asus_sw_play_n.29d41ad0.svg
+    |   |       asus_sw_play_n.d2cd0742.svg
+    |   |       asus_sw_play_p.1620d7a4.svg
+    |   |       asus_sw_play_p.29967d45.svg
+    |   |       asus_sw_play_p.d7ef6ece.svg
+    |   |       asus_sw_record_h.43a273f4.svg
+    |   |       asus_sw_record_h.5ef0261d.svg
+    |   |       asus_sw_record_h.f1004871.svg
+    |   |       asus_sw_record_n.337bb5dd.svg
+    |   |       asus_sw_record_n.51dc6da3.svg
+    |   |       asus_sw_record_p.4dd02da5.svg
+    |   |       asus_sw_record_p.a058aefa.svg
+    |   |       asus_sw_record_p.e1b371af.svg
+    |   |       
+    |   +---js
+    |   |       app.d418f6b3.js
+    |   |       app.d418f6b3.js.map
+    |   |       chunk-vendors.f0064c13.js
+    |   |       chunk-vendors.f0064c13.js.map
+    |   |       
+    |   \---music
+    |           01.wav
+    |           02.wav
+    |           
+    \---externalFiles
+        \---common
+            \---scenarioProfile
+                \---Icon
+                        0c343841dff20c676e538f2b6037129ec03d5e2e.ico8911067027078387336.png
+                        124a3a04440385aaa99bc38cb22416ae9a408476.ico704583216068219797.png
+                        15300b9a1aae70ad97ea057ba686a84037612d41.ico16014018306634861734.png
+                        1742949c970af8aa945e41d242227f3a935c7247.ico13190674634236022329.png
+                        31608589189040a1687c9c432bab4685da461bad.ico14515563782924898224.png
+                        31b5b05761c1726975ef96135956c1496c31147d.ico10362147489040628517.png
+                        35cb0c4a41ddd6ab7098e8c1137faa421919006d.ico13843852188506642195.png
+                        3d31b9b8d7ffb8512e546fc4ffb987273066ef0a.ico8904766639863916260.png
+                        4fdfa32ef6cc2c202b761bb1704e2362e6f5c3c4.ico6583871238205446975.png
+                        53a64716f9cfcb987437446e66b234a95b9001d2.ico7266363805385929330.png
+                        7zFM.exe685393835325167728.png
+                        8e155a9a0d50a1b6782d32d23122b8f23479f273.ico15627761825142597153.png
+                        9c666f3481074d644551e4bff1eb0229f9420f10.ico6764203083434377906.png
+                        9ceaf629d67dbe9cda076fd940f4455f64609451.ico4981443195285108077.png
+                        a01447c6057c7e2b7286d01682794d61b004cb4b.ico13684248466049812593.png
+                        a5d76c681b7dd66c875f029629088becab6d2f93.ico17218663279344400437.png
+                        accicons.exe3764161164664280880.png
+                        AlarmsAppList.scale-100.png10512129650048436328.png
+                        AlarmsAppList.scale-125.png10512129650048436328.png
+                        AMDBugReportTool.exe17637712222464958603.png
+                        AMDBugReportTool.exe5053832342470706433.png
+                        app.ico10959835051005115891.png
+                        AppIcon.scale-100.png4363251124494959923.png
+                        AppIcon.scale-100.png6796080791114312890.png
+                        AppIcon.scale-125.png6796080791114312890.png
+                        AppList.scale-100.png14816443998887902756.png
+                        AppList.scale-100.png6613617007225492388.png
+                        AppList.scale-125.png14816443998887902756.png
+                        AppList.scale-125.png6613617007225492388.png
+                        AppList.scale-125_contrast-black.png14816443998887902756.png
+                        AppList.scale-125_contrast-black.png6613617007225492388.png
+                        AsusOSD.exe6190222927932945615.png
+                        AsusOSD.exe9564025524436222539.png
+                        AuthFWGP.dll4539587483791583185.png
+                        bdd12fd12fb9b08bd6b27f37a88dad919de726b4.ico6096258258702842856.png
+                        branding_amdlink.ico13482182426866787583.png
+                        brave.exe5959190448131103601.png
+                        c0fa42ea207eb2224aad77958aef17d55c025a2d.ico11379239400206633477.png
+                        CalculatorAppList.scale-100.png4925468985423532364.png
+                        CalculatorAppList.scale-125.png4925468985423532364.png
+                        CalculatorAppList.targetsize-256.png4925468985423532364.png
+                        CameraAppList.scale-100.png13107689270582030561.png
+                        ceregreset.exe18317639662219860236.png
+                        charmap.exe293587021810698641.png
+                        Cheat Engine.exe8451192761273408122.png
+                        cheatengine-i386.exe13642545949979771747.png
+                        cheatengine-x86_64-SSE4-AVX2.exe855495773029793656.png
+                        cheatengine-x86_64.exe16938221370116593036.png
+                        cleanmgr.exe15191068315202376808.png
+                        cmd.exe14594901606808170895.png
+                        Code.exe10229819892200726732.png
+                        CodeSetup-stable-64bbfbf67ada9953918d72e1df2f4d8e537d340e.tmp2705191932307982656.png
+                        comres.dll106413733143520012.png
+                        Creative Cloud.exe11014133071053869366.png
+                        Descript.exe14016150041497146341.png
+                        devenv.exe9087914394651010070.png
+                        DevicePairingWizard.exe13012322455467084316.png
+                        dfrgui.exe4224340644750845886.png
+                        diagnostics.ico13979859813785036701.png
+                        diagnostics.ico15946491871994956991.png
+                        Documentation.url16918131636653123473.png
+                        e66d4784505d4a02f5234996af659714cace3bf4.ico16118211841437510408.png
+                        explorer.exe5280266935822572078.png
+                        FeedbackHubAppList.scale-100.png4685740894039956502.png
+                        FeedbackHubAppList.scale-125.png4685740894039956502.png
+                        filemgmt.dll8815817246814338550.png
+                        GameBar_AppList.scale-100.png4859779094799057995.png
+                        GameBar_AppList.scale-125.png4859779094799057995.png
+                        GamesXboxHubAppList.scale-100.png9118030087308576724.png
+                        GetHelpAppList.scale-100.png11448169995315433696.png
+                        GetHelpAppList.scale-125.png11448169995315433696.png
+                        GPU Power Saving.exe15804439867840864185.png
+                        hh.exe10069143309019314069.png
+                        HxCalendarAppList.scale-100.png9369213294218605847.png
+                        HxMailAppList.scale-100.png8211396751232067252.png
+                        idle.exe6507832253406368024.png
+                        idle.exe6954015887496217288.png
+                        iexplore.exe12666447763888682831.png
+                        Illustrator.exe10571092347984819523.png
+                        Illustrator.exe18290340054215267056.png
+                        Illustrator.exe6175088089312352626.png
+                        imperator.exe2875888555598924067.png
+                        InsiderHubAppList.scale-125.png4685740894039956502.png
+                        iscsicpl.dll3449932593340097217.png
+                        java.exe13732143452616280778.png
+                        java.exe17743170543206156729.png
+                        java.exe7366273689329862636.png
+                        javaw.exe10252398261288396942.png
+                        javaw.exe15034399222485728885.png
+                        joticon.exe9779459143362485438.png
+                        Kernelmoduleunloader.exe7022139166495073540.png
+                        logo.scale-100.png8349829619653851483.png
+                        magnify.exe3312997045399701678.png
+                        MapsAppList.scale-100.png559347453048549119.png
+                        MapsAppList.scale-125.png559347453048549119.png
+                        MdSched.exe8677477889599936589.png
+                        MicrosoftSolitaireAppList.scale-100.png16129753608124040991.png
+                        miguiresource.dll14192001087311557535.png
+                        miguiresource.dll9599434555762124841.png
+                        MinecraftLauncher.exe13584648916527655976.png
+                        mip.exe12107214094763827538.png
+                        misc.exe18358193472928370820.png
+                        MixedRealityPortalAppList.scale-100.png11156595512775911062.png
+                        MixedRealityPortalAppList.scale-125.png11156595512775911062.png
+                        mmc.exe12595328534798084158.png
+                        msconfig.exe2821838717839102521.png
+                        msdt.exe5091218004645544547.png
+                        msedge.exe12076550689242933824.png
+                        msinfo32.exe7230861758545087300.png
+                        msouc.exe13029000825771293127.png
+                        mspaint.exe1125708895954594225.png
+                        mstsc.exe14261081746357525223.png
+                        Mycomput.dll15816013264984614562.png
+                        narrator.exe526912183576543994.png
+                        NEWS.txt15411158336031264903.png
+                        notepad.exe10197414001892714776.png
+                        obs64.exe9223238464267897952.png
+                        odbcint.dll16275337870792198291.png
+                        odbcint.dll2994719675848346107.png
+                        OneConnectAppList.scale-100.png12159933469606011893.png
+                        OneConnectAppList.scale-125.png12159933469606011893.png
+                        OneConnectAppList.scale-200.png12159933469606011893.png
+                        OneDrive.exe6422899974870980235.png
+                        OneNoteAppList.scale-100.png14302892060374445694.png
+                        OpenWith.exe3607660105640104779.png
+                        OptionalFeatures.exe2960673879995357476.png
+                        osk.exe7950656656174102474.png
+                        outicon.exe11672211407689602843.png
+                        OUTLOOK.EXE11672211407689602843.png
+                        PaintAppList.scale-100.png2580153429518980436.png
+                        ParadoxIcon17751750218986045406.png
+                        PCHealthCheck.exe6656634975030382159.png
+                        PeopleAppList.scale-125.png11525509409157457647.png
+                        PhotosAppList.scale-100.png14104083896719006137.png
+                        PhotosAppList.scale-125.png14104083896719006137.png
+                        Photoshop.exe17686229575085864843.png
+                        Photoshop.exe271208292354986224.png
+                        Photoshop.exe7467372907899251641.png
+                        powershell.exe12684417134953640019.png
+                        powershell.exe13640757575068656267.png
+                        powershell.exe14467557233743973835.png
+                        powershell_ise.exe1371682236410250715.png
+                        powershell_ise.exe17334049235211811779.png
+                        pptico.exe13918218897824511215.png
+                        psr.exe4820799690246509228.png
+                        pubs.exe6304062751546952299.png
+                        py.exe14228418184328080628.png
+                        pycharm64.exe11764625471581508763.png
+                        python.exe16059205247667394255.png
+                        python.exe822378833155044415.png
+                        quickassist.exe16748380604748690191.png
+                        RadeonSoftware.exe13153532738681115267.png
+                        Razer Synapse 3.exe14280812954271826655.png
+                        Razer Synapse Service Process.exe16139248038838839031.png
+                        readme.txt5587358489958832210.png
+                        RecoveryDrive.exe5477455594566135546.png
+                        regedit.exe3945471925757680233.png
+                        rundll32.exe17810286345833138257.png
+                        sapi.cpl3543728873969758092.png
+                        ScreenSketchSquare44x44Logo.scale-125_contrast-black.png12551223327370630697.png
+                        setup.exe440542356148512021.png
+                        SkypeAppList.scale-100.png5909777046064911741.png
+                        SkypeAppList.scale-125.png5909777046064911741.png
+                        SmallLogo.scale-150.png12855148071279240896.png
+                        SnippingTool.exe14636420861320288609.png
+                        SnipSketchAppList.scale-100.png12551223327370630697.png
+                        SnipSketchAppList.scale-125.png12551223327370630697.png
+                        Square44x44Logo.scale-100.png11410077712143375745.png
+                        Square44x44Logo.scale-100.png11694407701293927398.png
+                        Square44x44Logo.scale-100.png17148212688684347923.png
+                        Square44x44Logo.scale-100.png1737306327478500913.png
+                        Square44x44Logo.scale-100.png17608547423389307421.png
+                        Square44x44Logo.scale-100.png3336835637018498374.png
+                        Square44x44Logo.scale-100.png3696426549662141300.png
+                        Square44x44Logo.scale-100.png6770272734783721876.png
+                        Square44x44Logo.scale-100.png9081657508089624164.png
+                        Square44x44Logo.scale-125.png3582046344484803607.png
+                        Square44x44Logo.scale-125.png3696426549662141300.png
+                        Square44x44Logo.targetsize-44_theme-dark.png11499846347119598242.png
+                        Steam.exe3057292898479658640.png
+                        steamwebhelper.exe10689465520703856468.png
+                        StickyNotesAppList.scale-100.png3582046344484803607.png
+                        StickyNotesAppList.scale-125.png3582046344484803607.png
+                        StoreAppList.scale-100.png1677826619662684951.png
+                        StoreAppList.scale-200.png1677826619662684951.png
+                        StoreLogo.png6837526652702081577.png
+                        StoreLogo.png8785797760151527675.png
+                        StoreLogo.scale-100.png1737306327478500913.png
+                        streaming_client.exe14379810374798384028.png
+                        systemsettings.exe4475711680162790882.png
+                        SystemSettingsAdminFlows.exe7347854183203287267.png
+                        Taskmgr.exe16350949584177666120.png
+                        The Bibites.exe16483380576675542718.png
+                        TinyTile.scale-125_contrast-black.png11448169995315433696.png
+                        TipsAppList.scale-100.png13345266597364872736.png
+                        toast.ico309147548937564031.png
+                        Tutorial-i386.exe17150506294970484978.png
+                        Tutorial-x86_64.exe5300584271990042189.png
+                        UserManual.pdf9508396767490935292.png
+                        VBAN2MIDI.exe2162967897302825824.png
+                        VBCABLE_ControlPanel.exe10983403381592827483.png
+                        VideoEditorAppList.scale-100.png17407069978915420126.png
+                        VideoEditorAppList.scale-125.png17407069978915420126.png
+                        VideoLAN Website.url12816631745356540898.png
+                        VirtualBox.exe16163993467250325341.png
+                        VirtualBoxVM.exe3751903076328570558.png
+                        vlc.exe14466000267659073897.png
+                        voicemeeter.exe6086306687221723128.png
+                        VoicemeeterBUSGEQ15.exe2806007726919002843.png
+                        VoicemeeterBUSMatrix8.exe5091670749403710951.png
+                        VoicemeeterMacroButtons.exe7035743985575974711.png
+                        VoiceRecorderAppList.scale-100.png14354662933276960105.png
+                        wdc.dll17148443703806474344.png
+                        wdc.dll8171301810452568205.png
+                        WeatherAppList.scale-100.png10448466197008995597.png
+                        WeatherAppList.scale-125.png10448466197008995597.png
+                        WFSR.dll15841758588256002799.png
+                        WhiteboardAppList.scale-100.png55268348526141758.png
+                        WhiteboardAppList.scale-125.png55268348526141758.png
+                        WindowsCameraAppList.scale-100.png13107689270582030561.png
+                        wmplayer.exe3060064108937415497.png
+                        wordicon.exe12223089243802149636.png
+                        wordpad.exe16877129310004188571.png
+                        wsecedit.dll8713534427668822222.png
+                        Xbox_AppList.scale-100.png5192384371668892556.png
+                        Xbox_AppList.scale-125.png5192384371668892556.png
+                        xlicons.exe2298839018030272413.png
+                        Zoom.exe16238168905470195011.png
+                        

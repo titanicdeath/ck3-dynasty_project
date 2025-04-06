@@ -58,20 +58,6 @@ vector<string_view> splitLines(const string &buffer) {
     return lines;
 }
 
-bool firstNameCheck(string_view current, const string check) {
-    int total = 0;
-    if (current[1] == check[1]){ 
-        for (int x = 0; x < 12; x++){
-            if (current[x] == check[x])total++;
-        }
-    }
-    if (total == check.size()){
-        return true;
-    }
-    else {
-        return false;
-    }
-}
 
 vector<string_view> filterCharacterBlocks(const vector<string_view> &allLines, string &buffer){
     // cout << "[DEBUG] fCB 1" << endl;
@@ -118,7 +104,7 @@ vector<string_view> filterCharacterBlocks(const vector<string_view> &allLines, s
                     //cout << "[DEBUG] fCB 5." << i << endl;
                     // Check next line for first_name=
                     
-                    if (inBlock == false) nameInit = firstNameCheck(allLines[i+1], "\tfirst_name=");
+                    if (inBlock == false) nameInit = keyCheck(allLines[i+1], "\tfirst_name=");
                 
                     if (nameInit == true) {
                         // This is the start of a character block
@@ -155,7 +141,7 @@ vector<string_view> filterCharacterBlocks(const vector<string_view> &allLines, s
         }
         else {
             //cout << "[DEBUG] fCB 3." << i << endl;
-            // We are inside a character block
+            // Inside a character block
 
             filtered.push_back(allLines[i]);
             // Count braces
@@ -268,6 +254,20 @@ vector<string> findBlock(const vector<string_view> &totalLines, const string &ch
     return block;
 }
 
+string buildCharacterBlocksString(const vector<string_view>& characterOnly)
+{
+    string newBuffer;
+    // You can reserve if you have a rough idea of the total length
+    // For example, each line might be ~100 bytes on average times characterOnly.size().
+    newBuffer.reserve(characterOnly.size() * 100); 
+
+    for (auto& lineView : characterOnly) {
+        newBuffer.append(lineView.data(), lineView.size());
+        newBuffer.push_back('\n');
+    }
+    return newBuffer;
+}
+
 vector<string_view> pointerLexicon(const string &buffer) {
     // Static maps for conversion – they persist for the program lifetime.
     static map<char, int> verification = {
@@ -356,16 +356,7 @@ vector<string_view> pointerLexicon(const string &buffer) {
     return result;
 }
 
-// string reduceMemory(string &buffer, vector<string_view> characterOnly){
-//     string_view proxy;
-//     for (int i = 0; i < buffer.size(); i++){
-//         proxy = characterOnly[i];
-//         if (proxy[i] != buffer[i]){
-//             buffer.erase(i);
-//         }
-//     }
-//     return buffer;
-// }
+
 
 void pointerPlayOptimized(const string &filename) {
     try {
@@ -374,30 +365,43 @@ void pointerPlayOptimized(const string &filename) {
 
         // Load the entire file as one contiguous string.
         // [1]  | Record Memory Usage | Before loading the file.
-        recordMemoryUsage(memorytable, memoryValues, true, true);
+        recordMemoryUsage(memorytable, memoryValues, true, true, 1);
         string fileBuffer = loadFileIntoString(filename);
 
         // [2]  |  Record Memory Usage | After loading the file.
-        recordMemoryUsage(memorytable, memoryValues, true, true);
+        recordMemoryUsage(memorytable, memoryValues, true, true, 2);
         vector<string_view> totallyAssimilatedLines = splitLines(fileBuffer);
 
-        // [3]  |  Record Memory Usage | After splitting lines
-        recordMemoryUsage(memorytable, memoryValues, true, true);
+        // [3]  |  Record Memory Usage | After splitting lines.
+        recordMemoryUsage(memorytable, memoryValues, true, true, 3);
         vector<string_view> characterOnly = filterCharacterBlocks(totallyAssimilatedLines, fileBuffer);
 
-        // [4]  |  Record Memory Usage | After filtering non-character blocks
-        recordMemoryUsage(memorytable, memoryValues, true, true);
-        //fileBuffer = reduceMemory(fileBuffer,characterOnly);
+        // [4]  |  Record Memory Usage | After filtering non-character blocks.
+        recordMemoryUsage(memorytable, memoryValues, true, true, 4);
 
-        // totallyAssimilatedLines.clear();
-        // totallyAssimilatedLines.shrink_to_fit();
-        //7
-        recordMemoryUsage(memorytable, memoryValues, true, true);
+        // [5]  |  Record Memory Usage | After building new filtered buffer.
+        string reduced = buildCharacterBlocksString(characterOnly);
+        recordMemoryUsage(memorytable, memoryValues, true, true, 5);
+
+        // [6]  |  Record Memory Usage | After clearing old buffer.
+        fileBuffer.clear();
+        fileBuffer.shrink_to_fit(); 
+        recordMemoryUsage(memorytable, memoryValues, true, true, 6);
+
+        // [7]  |  Record Memory Usage | After clearing old splitted buffer reference.
+        totallyAssimilatedLines.clear();
+        totallyAssimilatedLines.shrink_to_fit();
+        recordMemoryUsage(memorytable, memoryValues, true, true, 7);
+
+        // [8]  |  Record Memory Usage | After making new filtered reference line
+        vector<string_view> finalCharacterLines = splitLines(reduced);
+        recordMemoryUsage(memorytable, memoryValues, true, true, 8);
+
+        // [9]  |  Record Memory Usage | After finding blocks.
         string charID = "37676";
-        // vector<string> block = findBlock(totallyAssimilatedLines, charID);
-        vector<string> block = findBlock(characterOnly, charID);
-
-        recordMemoryUsage(memorytable, memoryValues, true, true);
+        vector<string> block = findBlock(finalCharacterLines, charID);
+        recordMemoryUsage(memorytable, memoryValues, true, true, 9);
+    
 
         memoryLogging(memorytable);
 
