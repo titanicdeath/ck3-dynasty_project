@@ -67,27 +67,37 @@ OTHER MEMORY FUNCTIONS
 ########################
 */
 
-void memoryLogging(vector<vector<string>> memorytable){
+string memoryLogging(vector<vector<string>> memorytable, bool devMsg, int option){
+    string msg = "";
     vector<string> row;
     map<int, string> verification = {
-        {1, "|   [1]\t|\tBefore loading file"},
-        {2, "|   [2]\t|\tAfter loading file"},
-        {3, "|   [3]\t|\tAfter splitting into lines"},
-        {4, "|   [4]\t|\tAfter isolating character blocks"},
-        {5, "|   [5]\t|\t++Non-owned character blocks weight"},
-        {6, "|   [6]\t|\tAfter creating owned character blocks"},
-        {7, "|   [7]\t|\t++Owned character block weight"}
+        {1, "|   [1]   |   Before loading the file."},
+        {2, "|   [2]   |   After loading the file."},
+        {3, "|   [3]   |   After splitting lines"},
+        {4, "|   [4]   |   After filtering other blocks"},
+        {5, "|   [5]   |   After building new filtered buffer"},
+        {6, "|   [6]   |   After clearing old buffer"},
+        {7, "|   [7]   |   After building filter blocks"},
+        {8, "|   [8]   |   After clearing buffer"},
+        {9, "|   [9]   |   After finding block"}
     };
-
-    for (int i = 0; i < (memorytable.size()); i++) {
-        row = memorytable[i];
-        cout << "\n|   [" << i + 1 << "]\t|\t";
-        cout << setw(20) << row[2] << "   |   ";
+    if (devMsg == false){
+        for (int i = 0; i < (memorytable.size()); i++) {
+            row = memorytable[i];
+            cout << "\n|   [" << i + 1 << "]   |   ";
+            cout << setw(20) << row[2] << "   |   ";
+        }
+        return "sorry c++";
     }
+    else if (devMsg == true) {
+        msg = verification[option];
+        return msg;
+    }
+    
 }
 
 // A simple function to record memory usage into a table
-void recordMemoryUsage(vector<vector<string>> &memoryTable, vector<std::size_t> &memoryValues, bool showSpotLog, bool showChangeLog) {
+void recordMemoryUsage(vector<vector<string>> &memoryTable, vector<std::size_t> &memoryValues, bool showSpotLog, bool showChangeLog, int msg) {
     // 1) Get current usage
     std::size_t current = getMemoryUsage();
     memoryValues.push_back(current);
@@ -112,6 +122,7 @@ void recordMemoryUsage(vector<vector<string>> &memoryTable, vector<std::size_t> 
     auto deltaStrings = byteFormat(delta);
     char sign = (current >= prev) ? '+' : '-';
     cout << "[DEV] Program Memory Change: " << sign << deltaStrings[1] << "\n";
+    cout << "[DEV] Operation: " << memoryLogging(memoryTable, true, msg)<< "\n\n";
     }
 }
 

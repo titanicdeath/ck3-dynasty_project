@@ -268,6 +268,20 @@ vector<string> findBlock(const vector<string_view> &totalLines, const string &ch
     return block;
 }
 
+std::string buildCharacterBlocksString(const std::vector<std::string_view>& characterOnly)
+{
+    std::string newBuffer;
+    // You can reserve if you have a rough idea of the total length
+    // For example, each line might be ~100 bytes on average times characterOnly.size().
+    newBuffer.reserve(characterOnly.size() * 100); 
+
+    for (auto& lineView : characterOnly) {
+        newBuffer.append(lineView.data(), lineView.size());
+        newBuffer.push_back('\n');
+    }
+    return newBuffer;
+}
+
 vector<string_view> pointerLexicon(const string &buffer) {
     // Static maps for conversion – they persist for the program lifetime.
     static map<char, int> verification = {
@@ -374,30 +388,43 @@ void pointerPlayOptimized(const string &filename) {
 
         // Load the entire file as one contiguous string.
         // [1]  | Record Memory Usage | Before loading the file.
-        recordMemoryUsage(memorytable, memoryValues, true, true);
+        recordMemoryUsage(memorytable, memoryValues, true, true, 1);
         string fileBuffer = loadFileIntoString(filename);
 
         // [2]  |  Record Memory Usage | After loading the file.
-        recordMemoryUsage(memorytable, memoryValues, true, true);
+        recordMemoryUsage(memorytable, memoryValues, true, true, 2);
         vector<string_view> totallyAssimilatedLines = splitLines(fileBuffer);
 
-        // [3]  |  Record Memory Usage | After splitting lines
-        recordMemoryUsage(memorytable, memoryValues, true, true);
+        // [3]  |  Record Memory Usage | After splitting lines.
+        recordMemoryUsage(memorytable, memoryValues, true, true, 3);
         vector<string_view> characterOnly = filterCharacterBlocks(totallyAssimilatedLines, fileBuffer);
 
-        // [4]  |  Record Memory Usage | After filtering non-character blocks
-        recordMemoryUsage(memorytable, memoryValues, true, true);
-        //fileBuffer = reduceMemory(fileBuffer,characterOnly);
+        // [4]  |  Record Memory Usage | After filtering non-character blocks.
+        recordMemoryUsage(memorytable, memoryValues, true, true, 4);
 
-        // totallyAssimilatedLines.clear();
-        // totallyAssimilatedLines.shrink_to_fit();
-        //7
-        recordMemoryUsage(memorytable, memoryValues, true, true);
+        // [5]  |  Record Memory Usage | After building new filtered buffer.
+        string reduced = buildCharacterBlocksString(characterOnly);
+        recordMemoryUsage(memorytable, memoryValues, true, true, 5);
+
+        // [6]  |  Record Memory Usage | After clearing old buffer.
+        fileBuffer.clear();
+        fileBuffer.shrink_to_fit(); 
+        recordMemoryUsage(memorytable, memoryValues, true, true, 6);
+
+        // [7]  |  Record Memory Usage | After clearing old splitted buffer reference.
+        totallyAssimilatedLines.clear();
+        totallyAssimilatedLines.shrink_to_fit();
+        recordMemoryUsage(memorytable, memoryValues, true, true, 7);
+
+        // [8]  |  Record Memory Usage | After making new filtered reference line
+        vector<string_view> finalCharacterLines = splitLines(reduced);
+        recordMemoryUsage(memorytable, memoryValues, true, true, 8);
+
+        // [9]  |  Record Memory Usage | After finding blocks.
         string charID = "37676";
-        // vector<string> block = findBlock(totallyAssimilatedLines, charID);
-        vector<string> block = findBlock(characterOnly, charID);
-
-        recordMemoryUsage(memorytable, memoryValues, true, true);
+        vector<string> block = findBlock(finalCharacterLines, charID);
+        recordMemoryUsage(memorytable, memoryValues, true, true, 9);
+    
 
         memoryLogging(memorytable);
 
